@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Libs: Referência do Arquivo telit-libs/arduino/Telit_libs/examples/Telit_Bluetooth/Telit_Bluetooth_Wifi_Logger/Telit_Bluetooth_Wifi_Logger.ino</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-sm.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Libs
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ee39d01ca2cba74545994a549664c8be.html">telit-libs</a></li><li class="navelem"><a class="el" href="dir_a6369b273c35737cbf5f11d73e7ec03d.html">arduino</a></li><li class="navelem"><a class="el" href="dir_5028c0490c5d5b28ca48556b87932379.html">Telit_libs</a></li><li class="navelem"><a class="el" href="dir_3b8a818849cb5ec8cdf482b2d63f09f8.html">examples</a></li><li class="navelem"><a class="el" href="dir_5516baf782c10f837042fc73ff094de5.html">Telit_Bluetooth</a></li><li class="navelem"><a class="el" href="dir_5132065e54b8daaa031a2518a533cef4.html">Telit_Bluetooth_Wifi_Logger</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definições e Macros</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo Telit_Bluetooth_Wifi_Logger.ino</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Exemplo Logger Bluetooth Wifi.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="_g_s2101_m_8h_source.html">GS2101M.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_b_m_s42_8h_source.html">BMS42.h</a>&gt;</code><br />
+<code>#include &lt;Arduino.h&gt;</code><br />
+<code>#include &quot;wiring_private.h&quot;</code><br />
+</div>
+<p><a href="_telit___bluetooth___wifi___logger_8ino_source.html">Vá para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:aaa07390e6158db5d82d40510d2ae02d5"><td class="memItemLeft" align="right" valign="top"><a id="aaa07390e6158db5d82d40510d2ae02d5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SERIAL_BUFFER_SIZE</b>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:aaa07390e6158db5d82d40510d2ae02d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1875309241ce0aabef4e8ce286c182b"><td class="memItemLeft" align="right" valign="top"><a id="ac1875309241ce0aabef4e8ce286c182b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RESP_MAX_LEN</b>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:ac1875309241ce0aabef4e8ce286c182b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08bca59db4b190eaaea4d47b7562869c"><td class="memItemLeft" align="right" valign="top"><a id="a08bca59db4b190eaaea4d47b7562869c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RESET_PIN</b>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:a08bca59db4b190eaaea4d47b7562869c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59deb3ec85280c65a0b3123a2645d31"><td class="memItemLeft" align="right" valign="top"><a id="ac59deb3ec85280c65a0b3123a2645d31"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RESET_PIN2</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ac59deb3ec85280c65a0b3123a2645d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7051a6666ff24f6cb4613655a62f2624"><td class="memItemLeft" align="right" valign="top"><a id="a7051a6666ff24f6cb4613655a62f2624"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SSID_WIFI</b>&#160;&#160;&#160;&quot;Lieno&quot;</td></tr>
+<tr class="separator:a7051a6666ff24f6cb4613655a62f2624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84246f2adcce2d4ebf7b6f24438ae5c3"><td class="memItemLeft" align="right" valign="top"><a id="a84246f2adcce2d4ebf7b6f24438ae5c3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PWD_WIFI</b>&#160;&#160;&#160;&quot;yourPassword&quot;</td></tr>
+<tr class="separator:a84246f2adcce2d4ebf7b6f24438ae5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24cd3c37a165a8c4626d9e78df4574ff"><td class="memItemLeft" align="right" valign="top"><a id="a24cd3c37a165a8c4626d9e78df4574ff"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SERVER</b>&#160;&#160;&#160;&quot;192.168.0.12&quot;</td></tr>
+<tr class="separator:a24cd3c37a165a8c4626d9e78df4574ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a614217d263be1fb1a5f76e2ff7be19a2"><td class="memItemLeft" align="right" valign="top"><a id="a614217d263be1fb1a5f76e2ff7be19a2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PORT</b>&#160;&#160;&#160;9000</td></tr>
+<tr class="separator:a614217d263be1fb1a5f76e2ff7be19a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:af6dd210c0dd3900541c82fe24728bb84"><td class="memItemLeft" align="right" valign="top"><a id="af6dd210c0dd3900541c82fe24728bb84"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SERCOM1_Handler</b> ()</td></tr>
+<tr class="separator:af6dd210c0dd3900541c82fe24728bb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834f6bce25e7aaef7a28a91b7c3fa3fb"><td class="memItemLeft" align="right" valign="top"><a id="a834f6bce25e7aaef7a28a91b7c3fa3fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SERCOM2_Handler</b> ()</td></tr>
+<tr class="separator:a834f6bce25e7aaef7a28a91b7c3fa3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b0e0b7a3b0becafd670ef13a4ae1f2"><td class="memItemLeft" align="right" valign="top"><a id="aa1b0e0b7a3b0becafd670ef13a4ae1f2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Inicia_Wifi</b> (int cid)</td></tr>
+<tr class="separator:aa1b0e0b7a3b0becafd670ef13a4ae1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9062b5978c40c407fe00eff4b7395163"><td class="memItemLeft" align="right" valign="top"><a id="a9062b5978c40c407fe00eff4b7395163"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Inicia_Bluetooth</b> (void)</td></tr>
+<tr class="separator:a9062b5978c40c407fe00eff4b7395163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top"><a id="a4fc01d736fe50cf5b977f755b675f11d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setup</b> ()</td></tr>
+<tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top"><a id="afe461d27b9c48d5921c00d521181f12f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>loop</b> ()</td></tr>
+<tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:af49e9eb5a574d226f5c0868e552f6481"><td class="memItemLeft" align="right" valign="top"><a id="af49e9eb5a574d226f5c0868e552f6481"></a>
+Uart serialModule &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>sercom1</b></td></tr>
+<tr class="separator:af49e9eb5a574d226f5c0868e552f6481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adccaebdfae694faa99a202afcf855eab"><td class="memItemLeft" align="right" valign="top"><a id="adccaebdfae694faa99a202afcf855eab"></a>
+Uart serialModule2 &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>sercom2</b></td></tr>
+<tr class="separator:adccaebdfae694faa99a202afcf855eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a730288f7d9b4757757f3a635b25fc8f9"><td class="memItemLeft" align="right" valign="top"><a id="a730288f7d9b4757757f3a635b25fc8f9"></a>
+<a class="el" href="class_g_s2101_m.html">GS2101M</a> wifi &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>serialModule</b></td></tr>
+<tr class="separator:a730288f7d9b4757757f3a635b25fc8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7867ea62fba90e1c4a33f19eca13c4fa"><td class="memItemLeft" align="right" valign="top"><a id="a7867ea62fba90e1c4a33f19eca13c4fa"></a>
+<a class="el" href="class_b_m_s42.html">BMS42</a> BT &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>serialModule2</b></td></tr>
+<tr class="separator:a7867ea62fba90e1c4a33f19eca13c4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Exemplo Logger Bluetooth Wifi. </p>
+<p>BlueMode+S42 / <a class="el" href="class_g_s2101_m.html">GS2101M</a> telit module <br />
+EVB3 <br />
+BlueEva+S Arduino M0</p>
+<p>Este é um exemplo de um sistema de logger de bluetooth baseado em wifi: que repassa o tráfego de um dispositivo por porta serial bluetooth para um socket aberto em um servidor local Permite também o fluxo de dados refletido na porta serial.</p>
+<dl class="section version"><dt>Versão</dt><dd>1.00 </dd></dl>
+
+<p class="definition">Definição no arquivo <a class="el" href="_telit___bluetooth___wifi___logger_8ino_source.html">Telit_Bluetooth_Wifi_Logger.ino</a>.</p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

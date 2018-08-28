@@ -1,0 +1,623 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Libs: Referência do Arquivo telit-libs/asf/libs/inc/bluetoothBms42.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-sm.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Libs
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ee39d01ca2cba74545994a549664c8be.html">telit-libs</a></li><li class="navelem"><a class="el" href="dir_52b2fffb8f7881b0ea7452242253f08c.html">asf</a></li><li class="navelem"><a class="el" href="dir_4a11be5c94f2c165715ff4ced81b7572.html">libs</a></li><li class="navelem"><a class="el" href="dir_c10ddc9bbc53b0251854ae18520a82d9.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Enumerações</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo bluetoothBms42.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A biblioteca XE910 implementa funcionalidades para os modulos Telit da familia BlueMode+S.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+</div>
+<p><a href="bluetooth_bms42_8h_source.html">Vá para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerações</h2></td></tr>
+<tr class="memitem:a8c1dfc1ccf00a08192611433ee7f17b4"><td class="memItemLeft" align="right" valign="top"><a id="a8c1dfc1ccf00a08192611433ee7f17b4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>__attribute__</b> { <br />
+&#160;&#160;<b>AT_ST_SND</b> = 0x00, 
+<b>AT_ST_SND_OK</b>, 
+<b>AT_ST_RCV_WAITING</b>, 
+<b>AT_ST_RCV_OK</b>, 
+<br />
+&#160;&#160;<b>AT_ST_RCV_OK_PARAM</b>, 
+<b>AT_ST_ERROR</b>, 
+<b>AT_ST_TIMEOUT</b>, 
+<b>BT_NO_ERROR</b> = 0x00, 
+<br />
+&#160;&#160;<b>BT_ERROR_TIMEOUT</b>, 
+<b>BT_ERROR_INVALID_ARG</b>, 
+<b>BT_ERROR_UNEXPECTED_RESPONSE</b>, 
+<b>BT_ERROR_UNEXPECTED_STATE</b>, 
+<br />
+&#160;&#160;<b>BT_ERROR_NOT_INITIALIZED</b>, 
+<b>BT_ERROR_BUFFER_NULL</b>, 
+<b>BT_ERROR_BUFFER_OVERFLOW</b>, 
+<b>BT_ERROR_CONNECTION</b>, 
+<br />
+&#160;&#160;<b>BT_ERROR_SENDING</b>, 
+<b>BT_ERROR_UNKNOWN</b>, 
+<b>BT_ST_DEINITIALIZED</b> = 0x00, 
+<b>BT_ST_INITIALIZING</b>, 
+<br />
+&#160;&#160;<b>BT_ST_ECHO_OFF</b>, 
+<b>BT_ST_SET_MODE</b>, 
+<b>BT_ST_INITIALIZED</b>, 
+<b>BT_ST_DISCONNECTED</b>, 
+<br />
+&#160;&#160;<b>BT_ST_CONNECTING</b>, 
+<b>BT_ST_CONNECT</b>, 
+<b>BT_ST_CONNECTED</b>, 
+<b>BT_ST_SLEEPING</b>, 
+<br />
+&#160;&#160;<b>BT_ST_DISCONNECTING</b>, 
+<b>BT_ST_TCP_CONNECTING</b>, 
+<b>BT_ST_TCP_BDATA</b>, 
+<b>BT_ST_TCP_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>BT_ST_TCP_CHECK_CID</b>, 
+<b>BT_ST_TCP_TRANSMITTING</b>, 
+<b>BT_ST_TCP_RECEIVING</b>, 
+<b>BT_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>BT_ST_UNKNOWN</b> = 0xff, 
+<b>SERIAL_PORT1</b> = 0x00, 
+<b>SERIAL_PORT2</b>, 
+<b>SERIAL_PORT3</b>, 
+<br />
+&#160;&#160;<b>GSM_NO_ERROR</b> = 0x00, 
+<b>GSM_ERROR_TIMEOUT</b>, 
+<b>GSM_ERROR_INVALID_ARG</b>, 
+<b>GSM_ERROR_UNEXPECTED_RESPONSE</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_UNEXPECTED_STATE</b>, 
+<b>GSM_ERROR_NOT_INITIALIZED</b>, 
+<b>GSM_ERROR_BUFFER_NULL</b>, 
+<b>GSM_ERROR_BUFFER_OVERFLOW</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_AUTH</b>, 
+<b>GSM_ERROR_ESP8266</b>, 
+<b>GSM_ERROR_CONNECTION</b>, 
+<b>GSM_ERROR_SENDING</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_UNKNOWN</b>, 
+<b>GSM_ST_DEINITIALIZED</b> = 0x00, 
+<b>GSM_ST_INITIALIZING</b>, 
+<b>GSM_ST_ECHO_OFF</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_REGISTER</b>, 
+<b>GSM_ST_INITIALIZED</b>, 
+<b>GSM_ST_DISCONNECTED</b>, 
+<b>GSM_ST_CONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_DHCP</b>, 
+<b>GSM_ST_WPA</b>, 
+<b>GSM_ST_CONNECT</b>, 
+<b>GSM_ST_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_SLEEPING</b>, 
+<b>GSM_ST_DISCONNECTING</b>, 
+<b>GSM_ST_TCP_CONNECTING</b>, 
+<b>GSM_ST_API_CONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_BDATA</b>, 
+<b>GSM_ST_TCP_CONNECTED</b>, 
+<b>GSM_ST_API_CONNECTED</b>, 
+<b>GSM_ST_API_SENDING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_CHECK_CID</b>, 
+<b>GSM_ST_TCP_TRANSMITTING</b>, 
+<b>GSM_ST_TCP_DISCONNECTING</b>, 
+<b>GSM_ST_API_DISCONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_RECEIVING</b>, 
+<b>GSM_ST_SMS_CFG_CSMS</b>, 
+<b>GSM_ST_SMS_CFG_TEXT</b>, 
+<b>GSM_ST_SMS_CFG_CNMI</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_SMS_CONFIGURED</b>, 
+<b>GSM_ST_SMS_MSG_WRITE</b>, 
+<b>GSM_ST_GPS_CFG_RST</b>, 
+<b>GSM_ST_GPS_CFG_ClR</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_GPS_CFG_ACP</b>, 
+<b>GSM_ST_GPS_CFG_START</b>, 
+<b>GSM_ST_GPS_CONFIGURED</b>, 
+<b>GSM_ST_GPS_STARTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_GPS_STARTED</b>, 
+<b>GSM_ST_GPS_STOPPING</b>, 
+<b>GSM_ST_CALL</b>, 
+<b>GSM_ST_ON_CALL</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_CLOSE_CALL</b>, 
+<b>GSM_ST_ERROR</b>, 
+<b>GSM_ST_UNKNOWN</b> = 0xff, 
+<b>WIFI_NO_ERROR</b> = 0x00, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_TIMEOUT</b>, 
+<b>WIFI_ERROR_INVALID_ARG</b>, 
+<b>WIFI_ERROR_UNEXPECTED_RESPONSE</b>, 
+<b>WIFI_ERROR_UNEXPECTED_STATE</b>, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_NOT_INITIALIZED</b>, 
+<b>WIFI_ERROR_BUFFER_NULL</b>, 
+<b>WIFI_ERROR_BUFFER_OVERFLOW</b>, 
+<b>WIFI_ERROR_AUTH</b>, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_ESP8266</b>, 
+<b>WIFI_ERROR_CONNECTION</b>, 
+<b>WIFI_ERROR_SENDING</b>, 
+<b>WIFI_ERROR_UNKNOWN</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_DEINITIALIZED</b> = 0x00, 
+<b>WIFI_ST_INITIALIZING</b>, 
+<b>WIFI_ST_ECHO_OFF</b>, 
+<b>WIFI_ST_SET_MODE</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_INITIALIZED</b>, 
+<b>WIFI_ST_DISCONNECTED</b>, 
+<b>WIFI_ST_CONNECTING</b>, 
+<b>WIFI_ST_DHCP</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_WPA</b>, 
+<b>WIFI_ST_CONNECT</b>, 
+<b>WIFI_ST_CONNECTED</b>, 
+<b>WIFI_ST_SLEEPING</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_DISCONNECTING</b>, 
+<b>WIFI_ST_TCP_CONNECTING</b>, 
+<b>WIFI_ST_TCP_BDATA</b>, 
+<b>WIFI_ST_TCP_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_TCP_CHECK_CID</b>, 
+<b>WIFI_ST_TCP_TRANSMITTING</b>, 
+<b>WIFI_ST_TCP_RECEIVING</b>, 
+<b>WIFI_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>MQTT_ST_CONNECTING</b>, 
+<b>MQTT_ST_CONNECT</b>, 
+<b>MQTT_ST_CONNECTED</b>, 
+<b>MQTT_ST_SUBSCRIBING</b>, 
+<br />
+&#160;&#160;<b>MQTT_ST_PUBLISHING</b>, 
+<b>MQTT_ST_DISCONNECTING</b>, 
+<b>MQTT_ST_DISCONNECTED</b>, 
+<b>MQTT_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_UNKNOWN</b> = 0xff
+<br />
+ }</td></tr>
+<tr class="separator:a8c1dfc1ccf00a08192611433ee7f17b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c1dfc1ccf00a08192611433ee7f17b4"><td class="memItemLeft" align="right" valign="top"><a id="a8c1dfc1ccf00a08192611433ee7f17b4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>__attribute__</b> { <br />
+&#160;&#160;<b>AT_ST_SND</b> = 0x00, 
+<b>AT_ST_SND_OK</b>, 
+<b>AT_ST_RCV_WAITING</b>, 
+<b>AT_ST_RCV_OK</b>, 
+<br />
+&#160;&#160;<b>AT_ST_RCV_OK_PARAM</b>, 
+<b>AT_ST_ERROR</b>, 
+<b>AT_ST_TIMEOUT</b>, 
+<b>BT_NO_ERROR</b> = 0x00, 
+<br />
+&#160;&#160;<b>BT_ERROR_TIMEOUT</b>, 
+<b>BT_ERROR_INVALID_ARG</b>, 
+<b>BT_ERROR_UNEXPECTED_RESPONSE</b>, 
+<b>BT_ERROR_UNEXPECTED_STATE</b>, 
+<br />
+&#160;&#160;<b>BT_ERROR_NOT_INITIALIZED</b>, 
+<b>BT_ERROR_BUFFER_NULL</b>, 
+<b>BT_ERROR_BUFFER_OVERFLOW</b>, 
+<b>BT_ERROR_CONNECTION</b>, 
+<br />
+&#160;&#160;<b>BT_ERROR_SENDING</b>, 
+<b>BT_ERROR_UNKNOWN</b>, 
+<b>BT_ST_DEINITIALIZED</b> = 0x00, 
+<b>BT_ST_INITIALIZING</b>, 
+<br />
+&#160;&#160;<b>BT_ST_ECHO_OFF</b>, 
+<b>BT_ST_SET_MODE</b>, 
+<b>BT_ST_INITIALIZED</b>, 
+<b>BT_ST_DISCONNECTED</b>, 
+<br />
+&#160;&#160;<b>BT_ST_CONNECTING</b>, 
+<b>BT_ST_CONNECT</b>, 
+<b>BT_ST_CONNECTED</b>, 
+<b>BT_ST_SLEEPING</b>, 
+<br />
+&#160;&#160;<b>BT_ST_DISCONNECTING</b>, 
+<b>BT_ST_TCP_CONNECTING</b>, 
+<b>BT_ST_TCP_BDATA</b>, 
+<b>BT_ST_TCP_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>BT_ST_TCP_CHECK_CID</b>, 
+<b>BT_ST_TCP_TRANSMITTING</b>, 
+<b>BT_ST_TCP_RECEIVING</b>, 
+<b>BT_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>BT_ST_UNKNOWN</b> = 0xff, 
+<b>SERIAL_PORT1</b> = 0x00, 
+<b>SERIAL_PORT2</b>, 
+<b>SERIAL_PORT3</b>, 
+<br />
+&#160;&#160;<b>GSM_NO_ERROR</b> = 0x00, 
+<b>GSM_ERROR_TIMEOUT</b>, 
+<b>GSM_ERROR_INVALID_ARG</b>, 
+<b>GSM_ERROR_UNEXPECTED_RESPONSE</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_UNEXPECTED_STATE</b>, 
+<b>GSM_ERROR_NOT_INITIALIZED</b>, 
+<b>GSM_ERROR_BUFFER_NULL</b>, 
+<b>GSM_ERROR_BUFFER_OVERFLOW</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_AUTH</b>, 
+<b>GSM_ERROR_ESP8266</b>, 
+<b>GSM_ERROR_CONNECTION</b>, 
+<b>GSM_ERROR_SENDING</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_UNKNOWN</b>, 
+<b>GSM_ST_DEINITIALIZED</b> = 0x00, 
+<b>GSM_ST_INITIALIZING</b>, 
+<b>GSM_ST_ECHO_OFF</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_REGISTER</b>, 
+<b>GSM_ST_INITIALIZED</b>, 
+<b>GSM_ST_DISCONNECTED</b>, 
+<b>GSM_ST_CONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_DHCP</b>, 
+<b>GSM_ST_WPA</b>, 
+<b>GSM_ST_CONNECT</b>, 
+<b>GSM_ST_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_SLEEPING</b>, 
+<b>GSM_ST_DISCONNECTING</b>, 
+<b>GSM_ST_TCP_CONNECTING</b>, 
+<b>GSM_ST_API_CONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_BDATA</b>, 
+<b>GSM_ST_TCP_CONNECTED</b>, 
+<b>GSM_ST_API_CONNECTED</b>, 
+<b>GSM_ST_API_SENDING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_CHECK_CID</b>, 
+<b>GSM_ST_TCP_TRANSMITTING</b>, 
+<b>GSM_ST_TCP_DISCONNECTING</b>, 
+<b>GSM_ST_API_DISCONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_RECEIVING</b>, 
+<b>GSM_ST_SMS_CFG_CSMS</b>, 
+<b>GSM_ST_SMS_CFG_TEXT</b>, 
+<b>GSM_ST_SMS_CFG_CNMI</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_SMS_CONFIGURED</b>, 
+<b>GSM_ST_SMS_MSG_WRITE</b>, 
+<b>GSM_ST_GPS_CFG_RST</b>, 
+<b>GSM_ST_GPS_CFG_ClR</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_GPS_CFG_ACP</b>, 
+<b>GSM_ST_GPS_CFG_START</b>, 
+<b>GSM_ST_GPS_CONFIGURED</b>, 
+<b>GSM_ST_GPS_STARTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_GPS_STARTED</b>, 
+<b>GSM_ST_GPS_STOPPING</b>, 
+<b>GSM_ST_CALL</b>, 
+<b>GSM_ST_ON_CALL</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_CLOSE_CALL</b>, 
+<b>GSM_ST_ERROR</b>, 
+<b>GSM_ST_UNKNOWN</b> = 0xff, 
+<b>WIFI_NO_ERROR</b> = 0x00, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_TIMEOUT</b>, 
+<b>WIFI_ERROR_INVALID_ARG</b>, 
+<b>WIFI_ERROR_UNEXPECTED_RESPONSE</b>, 
+<b>WIFI_ERROR_UNEXPECTED_STATE</b>, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_NOT_INITIALIZED</b>, 
+<b>WIFI_ERROR_BUFFER_NULL</b>, 
+<b>WIFI_ERROR_BUFFER_OVERFLOW</b>, 
+<b>WIFI_ERROR_AUTH</b>, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_ESP8266</b>, 
+<b>WIFI_ERROR_CONNECTION</b>, 
+<b>WIFI_ERROR_SENDING</b>, 
+<b>WIFI_ERROR_UNKNOWN</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_DEINITIALIZED</b> = 0x00, 
+<b>WIFI_ST_INITIALIZING</b>, 
+<b>WIFI_ST_ECHO_OFF</b>, 
+<b>WIFI_ST_SET_MODE</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_INITIALIZED</b>, 
+<b>WIFI_ST_DISCONNECTED</b>, 
+<b>WIFI_ST_CONNECTING</b>, 
+<b>WIFI_ST_DHCP</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_WPA</b>, 
+<b>WIFI_ST_CONNECT</b>, 
+<b>WIFI_ST_CONNECTED</b>, 
+<b>WIFI_ST_SLEEPING</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_DISCONNECTING</b>, 
+<b>WIFI_ST_TCP_CONNECTING</b>, 
+<b>WIFI_ST_TCP_BDATA</b>, 
+<b>WIFI_ST_TCP_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_TCP_CHECK_CID</b>, 
+<b>WIFI_ST_TCP_TRANSMITTING</b>, 
+<b>WIFI_ST_TCP_RECEIVING</b>, 
+<b>WIFI_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>MQTT_ST_CONNECTING</b>, 
+<b>MQTT_ST_CONNECT</b>, 
+<b>MQTT_ST_CONNECTED</b>, 
+<b>MQTT_ST_SUBSCRIBING</b>, 
+<br />
+&#160;&#160;<b>MQTT_ST_PUBLISHING</b>, 
+<b>MQTT_ST_DISCONNECTING</b>, 
+<b>MQTT_ST_DISCONNECTED</b>, 
+<b>MQTT_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_UNKNOWN</b> = 0xff
+<br />
+ }</td></tr>
+<tr class="separator:a8c1dfc1ccf00a08192611433ee7f17b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a9a337345cca8da281ef26ca21e3b58d1"><td class="memItemLeft" align="right" valign="top"><a id="a9a337345cca8da281ef26ca21e3b58d1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>aligned</b> (1))) BtError_et</td></tr>
+<tr class="separator:a9a337345cca8da281ef26ca21e3b58d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f6e25493c6e28ac0607595d3a2b7410"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluetooth_bms42_8h.html#a5f6e25493c6e28ac0607595d3a2b7410">BT_Init</a> (uint8_t mode)</td></tr>
+<tr class="memdesc:a5f6e25493c6e28ac0607595d3a2b7410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao BT_Init: Inicializa o modulo Wifi e a task de gerenciamento.  <a href="#a5f6e25493c6e28ac0607595d3a2b7410">Mais...</a><br /></td></tr>
+<tr class="separator:a5f6e25493c6e28ac0607595d3a2b7410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37329f6a2494896aea38dc8f5b58ce2f"><td class="memItemLeft" align="right" valign="top"><a id="a37329f6a2494896aea38dc8f5b58ce2f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluetooth_bms42_8h.html#a37329f6a2494896aea38dc8f5b58ce2f">BT_Deinit</a> (void)</td></tr>
+<tr class="memdesc:a37329f6a2494896aea38dc8f5b58ce2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao BT_Deinit: Desinicializa modulo. <br /></td></tr>
+<tr class="separator:a37329f6a2494896aea38dc8f5b58ce2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace0489a54e5df4a5a90ba0aac3d9c790"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluetooth_bms42_8h.html#ace0489a54e5df4a5a90ba0aac3d9c790">BT_ResetModule</a> (void)</td></tr>
+<tr class="memdesc:ace0489a54e5df4a5a90ba0aac3d9c790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao BT_ResetModule: Reinicia o Modulo.  <a href="#ace0489a54e5df4a5a90ba0aac3d9c790">Mais...</a><br /></td></tr>
+<tr class="separator:ace0489a54e5df4a5a90ba0aac3d9c790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1408b250bcfad4f741fe647b78ae334"><td class="memItemLeft" align="right" valign="top"><a id="aa1408b250bcfad4f741fe647b78ae334"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>BT_SetSleep</b> (bool sleep)</td></tr>
+<tr class="separator:aa1408b250bcfad4f741fe647b78ae334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e456671eee68652b46854f2193f1a15"><td class="memItemLeft" align="right" valign="top">BtState_et&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluetooth_bms42_8h.html#a1e456671eee68652b46854f2193f1a15">BT_GetState</a> (void)</td></tr>
+<tr class="memdesc:a1e456671eee68652b46854f2193f1a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao BT_ResetModule: Reinicia o Modulo.  <a href="#a1e456671eee68652b46854f2193f1a15">Mais...</a><br /></td></tr>
+<tr class="separator:a1e456671eee68652b46854f2193f1a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17964e81aff65165073827e7fdd6ba39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluetooth_bms42_8h.html#a17964e81aff65165073827e7fdd6ba39">BT_Connect</a> (void)</td></tr>
+<tr class="memdesc:a17964e81aff65165073827e7fdd6ba39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao BT_Connect: Indentifica a realizacao de uma conexao bluetooth.  <a href="#a17964e81aff65165073827e7fdd6ba39">Mais...</a><br /></td></tr>
+<tr class="separator:a17964e81aff65165073827e7fdd6ba39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1165770a2a523c22d64f79f008ce572"><td class="memItemLeft" align="right" valign="top"><a id="af1165770a2a523c22d64f79f008ce572"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>BT_IsConnected</b> (void)</td></tr>
+<tr class="separator:af1165770a2a523c22d64f79f008ce572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b3d448391f1bc3b1f658ac0400f8b7b"><td class="memItemLeft" align="right" valign="top"><a id="a8b3d448391f1bc3b1f658ac0400f8b7b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>BT_GetIp</b> (char *ip)</td></tr>
+<tr class="separator:a8b3d448391f1bc3b1f658ac0400f8b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a977b7532e98298b31ef6dc967489b3"><td class="memItemLeft" align="right" valign="top"><a id="a7a977b7532e98298b31ef6dc967489b3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluetooth_bms42_8h.html#a7a977b7532e98298b31ef6dc967489b3">BT_Disconnect</a> (void)</td></tr>
+<tr class="memdesc:a7a977b7532e98298b31ef6dc967489b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao BT_Disconnect: Desconecta o bluetooth. <br /></td></tr>
+<tr class="separator:a7a977b7532e98298b31ef6dc967489b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc14b6fc93b01963b77d21159ece036"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluetooth_bms42_8h.html#a0cc14b6fc93b01963b77d21159ece036">BT_Write</a> (uint8_t *data, uint16_t dataLen)</td></tr>
+<tr class="memdesc:a0cc14b6fc93b01963b77d21159ece036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao BtWrite: Configura o modulo para envia de menssagens de texto.  <a href="#a0cc14b6fc93b01963b77d21159ece036">Mais...</a><br /></td></tr>
+<tr class="separator:a0cc14b6fc93b01963b77d21159ece036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea0589202d23187ea05d45c767562868"><td class="memItemLeft" align="right" valign="top"><a id="aea0589202d23187ea05d45c767562868"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BT_ReadCallback</b> (uint8_t data, SerialPort_et port)</td></tr>
+<tr class="separator:aea0589202d23187ea05d45c767562868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>A biblioteca XE910 implementa funcionalidades para os modulos Telit da familia BlueMode+S. </p>
+<p>Esta biblioteca e utilizada por todos os exemplos do modulo BlueMode+S42.</p>
+<dl class="section author"><dt>Autor</dt><dd>Jonas de Luna Ieno, Lucas S. Feitosa, Pedro Granville e Thales.</dd></dl>
+<dl class="section version"><dt>Versão</dt><dd>1.00 </dd></dl>
+
+<p class="definition">Definição no arquivo <a class="el" href="bluetooth_bms42_8h_source.html">bluetoothBms42.h</a>.</p>
+</div><h2 class="groupheader">Funções</h2>
+<a id="a17964e81aff65165073827e7fdd6ba39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17964e81aff65165073827e7fdd6ba39">&#9670;&nbsp;</a></span>BT_Connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BT_Connect </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao BT_Connect: Indentifica a realizacao de uma conexao bluetooth. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber ocorrer uma conexao e 0 se nao ocorrer. </dd></dl>
+
+</div>
+</div>
+<a id="a1e456671eee68652b46854f2193f1a15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e456671eee68652b46854f2193f1a15">&#9670;&nbsp;</a></span>BT_GetState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BtState_et BT_GetState </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao BT_ResetModule: Reinicia o Modulo. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="a5f6e25493c6e28ac0607595d3a2b7410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f6e25493c6e28ac0607595d3a2b7410">&#9670;&nbsp;</a></span>BT_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BT_Init </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao BT_Init: Inicializa o modulo Wifi e a task de gerenciamento. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>define o modo de funcionamento 0-recebe conexoes (bluetooth visivel), 1-apenas realiza (bluetooth invisivel), 2-recebe e realiza conexoes btl (bluetooth visivel)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="ace0489a54e5df4a5a90ba0aac3d9c790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace0489a54e5df4a5a90ba0aac3d9c790">&#9670;&nbsp;</a></span>BT_ResetModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BT_ResetModule </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao BT_ResetModule: Reinicia o Modulo. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="a0cc14b6fc93b01963b77d21159ece036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cc14b6fc93b01963b77d21159ece036">&#9670;&nbsp;</a></span>BT_Write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BT_Write </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao BtWrite: Configura o modulo para envia de menssagens de texto. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Recebe um array de char contendo uma menssagem. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Recebe o tamanho do array de dados</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

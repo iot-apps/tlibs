@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Libs: Referência do Arquivo telit-libs/asf/examples/he910/SoftwareMqtt/src/softwareMqtt.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-sm.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Libs
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.14 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Busca');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ee39d01ca2cba74545994a549664c8be.html">telit-libs</a></li><li class="navelem"><a class="el" href="dir_52b2fffb8f7881b0ea7452242253f08c.html">asf</a></li><li class="navelem"><a class="el" href="dir_75b1dc1505a4bd9aec84da3565d6a865.html">examples</a></li><li class="navelem"><a class="el" href="dir_717c43dceb6570ced3d61e57e8540fc8.html">he910</a></li><li class="navelem"><a class="el" href="dir_50ab4f2779e5a51c6ced9902c1c50bda.html">SoftwareMqtt</a></li><li class="navelem"><a class="el" href="dir_a2fb00e1e3afc90fde479e316d041a27.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definições e Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo softwareMqtt.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Exemplo sistema MQTT.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;asf.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;serial.h&quot;</code><br />
+<code>#include &quot;wifiGs2101m.h&quot;</code><br />
+<code>#include &quot;gsmXE910.h&quot;</code><br />
+<code>#include &quot;softwareMqtt.h&quot;</code><br />
+</div>
+<p><a href="software_mqtt_8c_source.html">Vá para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a42f8c497a1968074f38bf5055c650dca"><td class="memItemLeft" align="right" valign="top"><a id="a42f8c497a1968074f38bf5055c650dca"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VERBOSE</b></td></tr>
+<tr class="separator:a42f8c497a1968074f38bf5055c650dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab5dcaaf5c28a12db74262dc5befcad"><td class="memItemLeft" align="right" valign="top"><a id="a1ab5dcaaf5c28a12db74262dc5befcad"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SOFTWAREMQTT_TASK_PRIORITY</b>&#160;&#160;&#160;(tskIDLE_PRIORITY + 2)</td></tr>
+<tr class="separator:a1ab5dcaaf5c28a12db74262dc5befcad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a30a6ec8526203789a860bd9ed204e"><td class="memItemLeft" align="right" valign="top"><a id="ab1a30a6ec8526203789a860bd9ed204e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SOFTWAREMQTT_TASK_DELAY</b>&#160;&#160;&#160;(100 / portTICK_PERIOD_MS)</td></tr>
+<tr class="separator:ab1a30a6ec8526203789a860bd9ed204e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a924533278c955221eeae305fa50dc0a3"><td class="memItemLeft" align="right" valign="top"><a id="a924533278c955221eeae305fa50dc0a3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_GSM_APN</b>&#160;&#160;&#160;&quot;gprs.oi.com.br&quot;</td></tr>
+<tr class="separator:a924533278c955221eeae305fa50dc0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb2c39781021d540042e7a7c2bf21140"><td class="memItemLeft" align="right" valign="top"><a id="acb2c39781021d540042e7a7c2bf21140"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_GSM_PROTOCOL</b>&#160;&#160;&#160;&quot;IP&quot;</td></tr>
+<tr class="separator:acb2c39781021d540042e7a7c2bf21140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92625aff000e90bcccf58514b818ee85"><td class="memItemLeft" align="right" valign="top"><a id="a92625aff000e90bcccf58514b818ee85"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_DEFAULT_ADDRESS</b>&#160;&#160;&#160;&quot;52.200.8.131&quot;</td></tr>
+<tr class="separator:a92625aff000e90bcccf58514b818ee85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47dbba2fb767e8362864895e3ce87a36"><td class="memItemLeft" align="right" valign="top"><a id="a47dbba2fb767e8362864895e3ce87a36"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_DEFAULT_PORT</b>&#160;&#160;&#160;1883</td></tr>
+<tr class="separator:a47dbba2fb767e8362864895e3ce87a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8005f29dbffc5b35a88b3d23f5eadcc"><td class="memItemLeft" align="right" valign="top"><a id="ae8005f29dbffc5b35a88b3d23f5eadcc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_DEFAULT_CLIENT_ID</b>&#160;&#160;&#160;&quot;gs2k_178db1&quot;</td></tr>
+<tr class="separator:ae8005f29dbffc5b35a88b3d23f5eadcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20fd7a8318fb7db19c997b526c2fc6a5"><td class="memItemLeft" align="right" valign="top"><a id="a20fd7a8318fb7db19c997b526c2fc6a5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_DEFAULT_USR</b>&#160;&#160;&#160;&quot;Default&quot;</td></tr>
+<tr class="separator:a20fd7a8318fb7db19c997b526c2fc6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9646e88d41a00006999247c7c193c8d1"><td class="memItemLeft" align="right" valign="top"><a id="a9646e88d41a00006999247c7c193c8d1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_DEFAULT_PWD</b>&#160;&#160;&#160;&quot;pLh5olDkMVIIG8Pd&quot;</td></tr>
+<tr class="separator:a9646e88d41a00006999247c7c193c8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a905b7143ddff268bcf3b94c6b3f605"><td class="memItemLeft" align="right" valign="top"><a id="a8a905b7143ddff268bcf3b94c6b3f605"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NUM_MAX_KEY_VALUE</b>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a8a905b7143ddff268bcf3b94c6b3f605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86626d4d161f4c3958ce1cd99c5b974e"><td class="memItemLeft" align="right" valign="top"><a id="a86626d4d161f4c3958ce1cd99c5b974e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VARIABLE</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a86626d4d161f4c3958ce1cd99c5b974e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0b03826c8f7cc324ac2db0ada2dce0a"><td class="memItemLeft" align="right" valign="top"><a id="aa0b03826c8f7cc324ac2db0ada2dce0a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VALUE</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aa0b03826c8f7cc324ac2db0ada2dce0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a3122728e06c36baf18b3c8161f771e70"><td class="memItemLeft" align="right" valign="top"><a id="a3122728e06c36baf18b3c8161f771e70"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>softwareMqttInit</b> (void)</td></tr>
+<tr class="separator:a3122728e06c36baf18b3c8161f771e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79185dd4788900de14749c306a1f2bdb"><td class="memItemLeft" align="right" valign="top"><a id="a79185dd4788900de14749c306a1f2bdb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SERIAL_ReadCallback</b> (uint8_t data)</td></tr>
+<tr class="separator:a79185dd4788900de14749c306a1f2bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Exemplo sistema MQTT. </p>
+<p>HE910/UE910/UL865/UE866 telit modem <br />
+EVK2 <br />
+Arduino M0</p>
+<p>Publica vari�veis em sistema MQTT, atrav�s do metodo por software para modem: Cria rotinas que leem uma fila de dados a serem enviados para o portal MQTT da Telit, em pares "nome da vari�vel" e "valor", e para cada item executa o post de vari�veis por MQTT embutido nos m�dulos.</p>
+<dl class="section version"><dt>Versão</dt><dd>1.00 </dd></dl>
+
+<p class="definition">Definição no arquivo <a class="el" href="software_mqtt_8c_source.html">softwareMqtt.c</a>.</p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

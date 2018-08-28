@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Libs: Referência do Arquivo telit-libs/asf/examples/he910/SmsCommands/src/smsCommands.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-sm.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Libs
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.14 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Busca');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ee39d01ca2cba74545994a549664c8be.html">telit-libs</a></li><li class="navelem"><a class="el" href="dir_52b2fffb8f7881b0ea7452242253f08c.html">asf</a></li><li class="navelem"><a class="el" href="dir_75b1dc1505a4bd9aec84da3565d6a865.html">examples</a></li><li class="navelem"><a class="el" href="dir_717c43dceb6570ced3d61e57e8540fc8.html">he910</a></li><li class="navelem"><a class="el" href="dir_e3329119726671d1fb9b51b6da0c8424.html">SmsCommands</a></li><li class="navelem"><a class="el" href="dir_0ffa0523bfb3da3ad8ca020dd6b01dbd.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definições e Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo smsCommands.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Exemplo comandos por SMS.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;asf.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;serial.h&quot;</code><br />
+<code>#include &quot;gsmXE910.h&quot;</code><br />
+<code>#include &quot;smsCommands.h&quot;</code><br />
+</div>
+<p><a href="sms_commands_8c_source.html">Vá para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a42f8c497a1968074f38bf5055c650dca"><td class="memItemLeft" align="right" valign="top"><a id="a42f8c497a1968074f38bf5055c650dca"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VERBOSE</b></td></tr>
+<tr class="separator:a42f8c497a1968074f38bf5055c650dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a738b0c6406c82fb2e06a2af2344aa327"><td class="memItemLeft" align="right" valign="top"><a id="a738b0c6406c82fb2e06a2af2344aa327"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SMSCOMMANDS_TASK_PRIORITY</b>&#160;&#160;&#160;(tskIDLE_PRIORITY + 2)</td></tr>
+<tr class="separator:a738b0c6406c82fb2e06a2af2344aa327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276607d02a6329d47daaa961cff5bf37"><td class="memItemLeft" align="right" valign="top"><a id="a276607d02a6329d47daaa961cff5bf37"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SMSCOMMANDS_TASK_DELAY</b>&#160;&#160;&#160;(100 / portTICK_PERIOD_MS)</td></tr>
+<tr class="separator:a276607d02a6329d47daaa961cff5bf37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a924533278c955221eeae305fa50dc0a3"><td class="memItemLeft" align="right" valign="top"><a id="a924533278c955221eeae305fa50dc0a3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_GSM_APN</b>&#160;&#160;&#160;&quot;gprs.oi.com.br&quot;</td></tr>
+<tr class="separator:a924533278c955221eeae305fa50dc0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb2c39781021d540042e7a7c2bf21140"><td class="memItemLeft" align="right" valign="top"><a id="acb2c39781021d540042e7a7c2bf21140"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_GSM_PROTOCOL</b>&#160;&#160;&#160;&quot;IP&quot;</td></tr>
+<tr class="separator:acb2c39781021d540042e7a7c2bf21140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ab2d4338c3f352d825012fe57c147c"><td class="memItemLeft" align="right" valign="top"><a id="a42ab2d4338c3f352d825012fe57c147c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DATA_RECEIVED_MAX_LEN</b>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:a42ab2d4338c3f352d825012fe57c147c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236f9850745a2bfe455896f815b59477"><td class="memItemLeft" align="right" valign="top"><a id="a236f9850745a2bfe455896f815b59477"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CELL_NUMBER</b>&#160;&#160;&#160;&quot;+83-numero_telefone-&quot;</td></tr>
+<tr class="separator:a236f9850745a2bfe455896f815b59477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a6bc41b25764d1dff2ee67d072988f30d"><td class="memItemLeft" align="right" valign="top"><a id="a6bc41b25764d1dff2ee67d072988f30d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>smsCommandsInit</b> (void)</td></tr>
+<tr class="separator:a6bc41b25764d1dff2ee67d072988f30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79185dd4788900de14749c306a1f2bdb"><td class="memItemLeft" align="right" valign="top"><a id="a79185dd4788900de14749c306a1f2bdb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SERIAL_ReadCallback</b> (uint8_t data)</td></tr>
+<tr class="separator:a79185dd4788900de14749c306a1f2bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affd0fa060c25160b5e5cb56104c7587e"><td class="memItemLeft" align="right" valign="top"><a id="affd0fa060c25160b5e5cb56104c7587e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GSM_TcpReadCallback</b> (uint8_t data)</td></tr>
+<tr class="separator:affd0fa060c25160b5e5cb56104c7587e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Exemplo comandos por SMS. </p>
+<p>HE910/UE910/UL865/UE866 telit modem <br />
+EVK2 <br />
+Arduino M0</p>
+<p>Este exemplo mostra como executar comandos atrav�s de Comunica��o por SMS: Tasks ou rotinas que leem continuamente as mensagens SMS recebidas pelo m�dulo, lendo seu conte�do e executando comandos conforme o texto enviado pela mensagem e com resposta(feedback) por SMS.</p>
+<dl class="section version"><dt>Versão</dt><dd>1.00 </dd></dl>
+
+<p class="definition">Definição no arquivo <a class="el" href="sms_commands_8c_source.html">smsCommands.c</a>.</p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

@@ -1,0 +1,9 @@
+/*! \mainpage Documentação das bibliotecas e exemplos do Telit Libs ASF/FreeRTOS
+ *
+ * Aqui disponibilizamos as bibliotecas, utilizadas pelos exemplos de aplicações e sua documentação
+ * necessária para integração dos módulos Telit GSM HE910/UE910GL, Wifi %GS2101M e BlueMod+S42, 
+ * com a família de microcontroladores da Microchip ATSAMD21.
+ * 
+ * As bibliotecas são disponibilizadas para implementação em ASF/FreeRTOS, e todas as aplicações
+ * de exemplos são compatíveis com a placa Arduino M0 Pro.
+ */

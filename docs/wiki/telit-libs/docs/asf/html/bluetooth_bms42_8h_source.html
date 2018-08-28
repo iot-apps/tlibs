@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Libs: Código-Fonte de telit-libs/asf/libs/inc/bluetoothBms42.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-sm.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Libs
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ee39d01ca2cba74545994a549664c8be.html">telit-libs</a></li><li class="navelem"><a class="el" href="dir_52b2fffb8f7881b0ea7452242253f08c.html">asf</a></li><li class="navelem"><a class="el" href="dir_4a11be5c94f2c165715ff4ced81b7572.html">libs</a></li><li class="navelem"><a class="el" href="dir_c10ddc9bbc53b0251854ae18520a82d9.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">bluetoothBms42.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="bluetooth_bms42_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef BLUETOOTHBMS42_H_</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define BLUETOOTHBMS42_H_</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    BT_NO_ERROR = 0x00,</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    BT_ERROR_TIMEOUT,</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    BT_ERROR_INVALID_ARG,</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    BT_ERROR_UNEXPECTED_RESPONSE,</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    BT_ERROR_UNEXPECTED_STATE,</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    BT_ERROR_NOT_INITIALIZED,</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    BT_ERROR_BUFFER_NULL,</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    BT_ERROR_BUFFER_OVERFLOW,</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    BT_ERROR_CONNECTION,</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    BT_ERROR_SENDING,</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    BT_ERROR_UNKNOWN</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} __attribute__((packed, aligned(1))) BtError_et;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;typedef enum {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    BT_ST_DEINITIALIZED = 0x00,</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    BT_ST_INITIALIZING,</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    BT_ST_ECHO_OFF,</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    BT_ST_SET_MODE,</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    BT_ST_INITIALIZED,</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    BT_ST_DISCONNECTED,</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    BT_ST_CONNECTING,</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    BT_ST_CONNECT,</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    BT_ST_CONNECTED,</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    BT_ST_SLEEPING,</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    BT_ST_DISCONNECTING,</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    BT_ST_TCP_CONNECTING,</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    BT_ST_TCP_BDATA,</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    BT_ST_TCP_CONNECTED,</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    BT_ST_TCP_CHECK_CID,</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    BT_ST_TCP_TRANSMITTING,</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    BT_ST_TCP_RECEIVING,</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    BT_ST_ERROR,</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    BT_ST_UNKNOWN = 0xff</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;} __attribute__((packed, aligned(1))) BtState_et;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">bool</span>       <a class="code" href="bluetooth_bms42_8h.html#a5f6e25493c6e28ac0607595d3a2b7410">BT_Init</a>(uint8_t mode);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span>       <a class="code" href="bluetooth_bms42_8h.html#a37329f6a2494896aea38dc8f5b58ce2f">BT_Deinit</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span>       <a class="code" href="bluetooth_bms42_8h.html#ace0489a54e5df4a5a90ba0aac3d9c790">BT_ResetModule</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    </div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">bool</span>       BT_SetSleep(<span class="keywordtype">bool</span> sleep);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    BtState_et <a class="code" href="bluetooth_bms42_8h.html#a1e456671eee68652b46854f2193f1a15">BT_GetState</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">bool</span>       <a class="code" href="bluetooth_bms42_8h.html#a17964e81aff65165073827e7fdd6ba39">BT_Connect</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">bool</span>       BT_IsConnected(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">bool</span>       BT_GetIp(<span class="keywordtype">char</span> *ip);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span>       <a class="code" href="bluetooth_bms42_8h.html#a7a977b7532e98298b31ef6dc967489b3">BT_Disconnect</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">bool</span>       <a class="code" href="bluetooth_bms42_8h.html#a0cc14b6fc93b01963b77d21159ece036">BT_Write</a>(uint8_t* data, uint16_t dataLen);</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span>       BT_ReadCallback(uint8_t data, SerialPort_et port); <span class="comment">// Deve ser implementado na aplica��o.</span></div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* BLUETOOTHBMS42_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="bluetooth_bms42_8h_html_ace0489a54e5df4a5a90ba0aac3d9c790"><div class="ttname"><a href="bluetooth_bms42_8h.html#ace0489a54e5df4a5a90ba0aac3d9c790">BT_ResetModule</a></div><div class="ttdeci">bool BT_ResetModule(void)</div><div class="ttdoc">Funcao BT_ResetModule: Reinicia o Modulo. </div></div>
+<div class="ttc" id="bluetooth_bms42_8h_html_a17964e81aff65165073827e7fdd6ba39"><div class="ttname"><a href="bluetooth_bms42_8h.html#a17964e81aff65165073827e7fdd6ba39">BT_Connect</a></div><div class="ttdeci">bool BT_Connect(void)</div><div class="ttdoc">Funcao BT_Connect: Indentifica a realizacao de uma conexao bluetooth. </div></div>
+<div class="ttc" id="bluetooth_bms42_8h_html_a37329f6a2494896aea38dc8f5b58ce2f"><div class="ttname"><a href="bluetooth_bms42_8h.html#a37329f6a2494896aea38dc8f5b58ce2f">BT_Deinit</a></div><div class="ttdeci">void BT_Deinit(void)</div><div class="ttdoc">Funcao BT_Deinit: Desinicializa modulo. </div></div>
+<div class="ttc" id="bluetooth_bms42_8h_html_a0cc14b6fc93b01963b77d21159ece036"><div class="ttname"><a href="bluetooth_bms42_8h.html#a0cc14b6fc93b01963b77d21159ece036">BT_Write</a></div><div class="ttdeci">bool BT_Write(uint8_t *data, uint16_t dataLen)</div><div class="ttdoc">Funcao BtWrite: Configura o modulo para envia de menssagens de texto. </div></div>
+<div class="ttc" id="bluetooth_bms42_8h_html_a1e456671eee68652b46854f2193f1a15"><div class="ttname"><a href="bluetooth_bms42_8h.html#a1e456671eee68652b46854f2193f1a15">BT_GetState</a></div><div class="ttdeci">BtState_et BT_GetState(void)</div><div class="ttdoc">Funcao BT_ResetModule: Reinicia o Modulo. </div></div>
+<div class="ttc" id="bluetooth_bms42_8h_html_a5f6e25493c6e28ac0607595d3a2b7410"><div class="ttname"><a href="bluetooth_bms42_8h.html#a5f6e25493c6e28ac0607595d3a2b7410">BT_Init</a></div><div class="ttdeci">bool BT_Init(uint8_t mode)</div><div class="ttdoc">Funcao BT_Init: Inicializa o modulo Wifi e a task de gerenciamento. </div></div>
+<div class="ttc" id="bluetooth_bms42_8h_html_a7a977b7532e98298b31ef6dc967489b3"><div class="ttname"><a href="bluetooth_bms42_8h.html#a7a977b7532e98298b31ef6dc967489b3">BT_Disconnect</a></div><div class="ttdeci">void BT_Disconnect(void)</div><div class="ttdoc">Funcao BT_Disconnect: Desconecta o bluetooth. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

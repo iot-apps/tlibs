@@ -1,0 +1,958 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Libs: Referência do Arquivo telit-libs/asf/libs/inc/wifiGs2101m.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-sm.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Libs
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ee39d01ca2cba74545994a549664c8be.html">telit-libs</a></li><li class="navelem"><a class="el" href="dir_52b2fffb8f7881b0ea7452242253f08c.html">asf</a></li><li class="navelem"><a class="el" href="dir_4a11be5c94f2c165715ff4ced81b7572.html">libs</a></li><li class="navelem"><a class="el" href="dir_c10ddc9bbc53b0251854ae18520a82d9.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definições e Macros</a> &#124;
+<a href="#typedef-members">Definições de Tipos</a> &#124;
+<a href="#enum-members">Enumerações</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo wifiGs2101m.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A biblioteca GS2101M implementa funcionalidades para o modulo Telit GS2101M.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;at.h&quot;</code><br />
+</div>
+<p><a href="wifi_gs2101m_8h_source.html">Vá para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:af545a44e28a5f203bb654c3a8b6bfb41"><td class="memItemLeft" align="right" valign="top"><a id="af545a44e28a5f203bb654c3a8b6bfb41"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_DEFAULT_SSID</b>&#160;&#160;&#160;&quot;Lieno&quot;</td></tr>
+<tr class="separator:af545a44e28a5f203bb654c3a8b6bfb41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af14b900acf634ebf990ccb1d41260463"><td class="memItemLeft" align="right" valign="top"><a id="af14b900acf634ebf990ccb1d41260463"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_DEFAULT_PASS</b>&#160;&#160;&#160;&quot;belohorizonte&quot;</td></tr>
+<tr class="separator:af14b900acf634ebf990ccb1d41260463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad62c60666c9fdffe2e0e9c4388f87886"><td class="memItemLeft" align="right" valign="top"><a id="ad62c60666c9fdffe2e0e9c4388f87886"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_SSID_MAX_LEN</b>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:ad62c60666c9fdffe2e0e9c4388f87886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeed09449961c7ac8f1a788480c96b689"><td class="memItemLeft" align="right" valign="top"><a id="aeed09449961c7ac8f1a788480c96b689"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_PASS_MAX_LEN</b>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:aeed09449961c7ac8f1a788480c96b689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66b4b15e617d16fe81219c6955a5b4a"><td class="memItemLeft" align="right" valign="top"><a id="ae66b4b15e617d16fe81219c6955a5b4a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_IP_MAX_LEN</b>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:ae66b4b15e617d16fe81219c6955a5b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10b5553e124e85b42b368ea10750b65a"><td class="memItemLeft" align="right" valign="top"><a id="a10b5553e124e85b42b368ea10750b65a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_ADDR_TCP_MAX_LEN</b>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a10b5553e124e85b42b368ea10750b65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0add63f8ed76cf8f706e2f8cda1f97c0"><td class="memItemLeft" align="right" valign="top"><a id="a0add63f8ed76cf8f706e2f8cda1f97c0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_MAX_CIDS</b>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a0add63f8ed76cf8f706e2f8cda1f97c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a919fd4393686985f1d325b9de5de70b6"><td class="memItemLeft" align="right" valign="top"><a id="a919fd4393686985f1d325b9de5de70b6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_MODE_STATION</b>&#160;&#160;&#160;&quot;0&quot;</td></tr>
+<tr class="separator:a919fd4393686985f1d325b9de5de70b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06328a44e4875f7a973d84c529e2027d"><td class="memItemLeft" align="right" valign="top"><a id="a06328a44e4875f7a973d84c529e2027d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_MODE_AP</b>&#160;&#160;&#160;&quot;1&quot;</td></tr>
+<tr class="separator:a06328a44e4875f7a973d84c529e2027d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f309922aed64c72d5f7627b097f3a34"><td class="memItemLeft" align="right" valign="top"><a id="a9f309922aed64c72d5f7627b097f3a34"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_TOPIC_MAX_LEN</b>&#160;&#160;&#160;128</td></tr>
+<tr class="separator:a9f309922aed64c72d5f7627b097f3a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c3b3c4f3a4c34dae9676915f87116a"><td class="memItemLeft" align="right" valign="top"><a id="ab8c3b3c4f3a4c34dae9676915f87116a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_ADDRESS_MAX_LEN</b>&#160;&#160;&#160;128</td></tr>
+<tr class="separator:ab8c3b3c4f3a4c34dae9676915f87116a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78fc6c8a30cf3f3cb60760b14a17dc43"><td class="memItemLeft" align="right" valign="top"><a id="a78fc6c8a30cf3f3cb60760b14a17dc43"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_CLIENT_ID_MAX_LEN</b>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:a78fc6c8a30cf3f3cb60760b14a17dc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a146d7bca18bc3d8f80ce74927729f2b5"><td class="memItemLeft" align="right" valign="top"><a id="a146d7bca18bc3d8f80ce74927729f2b5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_MESSAGE_MAX_LEN</b>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:a146d7bca18bc3d8f80ce74927729f2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6179c4e22ac8f137dfb5a41499ad11d5"><td class="memItemLeft" align="right" valign="top"><a id="a6179c4e22ac8f137dfb5a41499ad11d5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_MAX_MESSAGES</b>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a6179c4e22ac8f137dfb5a41499ad11d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Definições de Tipos</h2></td></tr>
+<tr class="memitem:af453d2f757b950d640a778f0bff460c8"><td class="memItemLeft" align="right" valign="top"><a id="af453d2f757b950d640a778f0bff460c8"></a>
+typedef enum __attribute__&#160;</td><td class="memItemRight" valign="bottom"><b>aligned</b></td></tr>
+<tr class="separator:af453d2f757b950d640a778f0bff460c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerações</h2></td></tr>
+<tr class="memitem:a8c1dfc1ccf00a08192611433ee7f17b4"><td class="memItemLeft" align="right" valign="top"><a id="a8c1dfc1ccf00a08192611433ee7f17b4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>__attribute__</b> { <br />
+&#160;&#160;<b>AT_ST_SND</b> = 0x00, 
+<b>AT_ST_SND_OK</b>, 
+<b>AT_ST_RCV_WAITING</b>, 
+<b>AT_ST_RCV_OK</b>, 
+<br />
+&#160;&#160;<b>AT_ST_RCV_OK_PARAM</b>, 
+<b>AT_ST_ERROR</b>, 
+<b>AT_ST_TIMEOUT</b>, 
+<b>BT_NO_ERROR</b> = 0x00, 
+<br />
+&#160;&#160;<b>BT_ERROR_TIMEOUT</b>, 
+<b>BT_ERROR_INVALID_ARG</b>, 
+<b>BT_ERROR_UNEXPECTED_RESPONSE</b>, 
+<b>BT_ERROR_UNEXPECTED_STATE</b>, 
+<br />
+&#160;&#160;<b>BT_ERROR_NOT_INITIALIZED</b>, 
+<b>BT_ERROR_BUFFER_NULL</b>, 
+<b>BT_ERROR_BUFFER_OVERFLOW</b>, 
+<b>BT_ERROR_CONNECTION</b>, 
+<br />
+&#160;&#160;<b>BT_ERROR_SENDING</b>, 
+<b>BT_ERROR_UNKNOWN</b>, 
+<b>BT_ST_DEINITIALIZED</b> = 0x00, 
+<b>BT_ST_INITIALIZING</b>, 
+<br />
+&#160;&#160;<b>BT_ST_ECHO_OFF</b>, 
+<b>BT_ST_SET_MODE</b>, 
+<b>BT_ST_INITIALIZED</b>, 
+<b>BT_ST_DISCONNECTED</b>, 
+<br />
+&#160;&#160;<b>BT_ST_CONNECTING</b>, 
+<b>BT_ST_CONNECT</b>, 
+<b>BT_ST_CONNECTED</b>, 
+<b>BT_ST_SLEEPING</b>, 
+<br />
+&#160;&#160;<b>BT_ST_DISCONNECTING</b>, 
+<b>BT_ST_TCP_CONNECTING</b>, 
+<b>BT_ST_TCP_BDATA</b>, 
+<b>BT_ST_TCP_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>BT_ST_TCP_CHECK_CID</b>, 
+<b>BT_ST_TCP_TRANSMITTING</b>, 
+<b>BT_ST_TCP_RECEIVING</b>, 
+<b>BT_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>BT_ST_UNKNOWN</b> = 0xff, 
+<b>SERIAL_PORT1</b> = 0x00, 
+<b>SERIAL_PORT2</b>, 
+<b>SERIAL_PORT3</b>, 
+<br />
+&#160;&#160;<b>GSM_NO_ERROR</b> = 0x00, 
+<b>GSM_ERROR_TIMEOUT</b>, 
+<b>GSM_ERROR_INVALID_ARG</b>, 
+<b>GSM_ERROR_UNEXPECTED_RESPONSE</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_UNEXPECTED_STATE</b>, 
+<b>GSM_ERROR_NOT_INITIALIZED</b>, 
+<b>GSM_ERROR_BUFFER_NULL</b>, 
+<b>GSM_ERROR_BUFFER_OVERFLOW</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_AUTH</b>, 
+<b>GSM_ERROR_ESP8266</b>, 
+<b>GSM_ERROR_CONNECTION</b>, 
+<b>GSM_ERROR_SENDING</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_UNKNOWN</b>, 
+<b>GSM_ST_DEINITIALIZED</b> = 0x00, 
+<b>GSM_ST_INITIALIZING</b>, 
+<b>GSM_ST_ECHO_OFF</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_REGISTER</b>, 
+<b>GSM_ST_INITIALIZED</b>, 
+<b>GSM_ST_DISCONNECTED</b>, 
+<b>GSM_ST_CONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_DHCP</b>, 
+<b>GSM_ST_WPA</b>, 
+<b>GSM_ST_CONNECT</b>, 
+<b>GSM_ST_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_SLEEPING</b>, 
+<b>GSM_ST_DISCONNECTING</b>, 
+<b>GSM_ST_TCP_CONNECTING</b>, 
+<b>GSM_ST_API_CONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_BDATA</b>, 
+<b>GSM_ST_TCP_CONNECTED</b>, 
+<b>GSM_ST_API_CONNECTED</b>, 
+<b>GSM_ST_API_SENDING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_CHECK_CID</b>, 
+<b>GSM_ST_TCP_TRANSMITTING</b>, 
+<b>GSM_ST_TCP_DISCONNECTING</b>, 
+<b>GSM_ST_API_DISCONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_RECEIVING</b>, 
+<b>GSM_ST_SMS_CFG_CSMS</b>, 
+<b>GSM_ST_SMS_CFG_TEXT</b>, 
+<b>GSM_ST_SMS_CFG_CNMI</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_SMS_CONFIGURED</b>, 
+<b>GSM_ST_SMS_MSG_WRITE</b>, 
+<b>GSM_ST_GPS_CFG_RST</b>, 
+<b>GSM_ST_GPS_CFG_ClR</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_GPS_CFG_ACP</b>, 
+<b>GSM_ST_GPS_CFG_START</b>, 
+<b>GSM_ST_GPS_CONFIGURED</b>, 
+<b>GSM_ST_GPS_STARTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_GPS_STARTED</b>, 
+<b>GSM_ST_GPS_STOPPING</b>, 
+<b>GSM_ST_CALL</b>, 
+<b>GSM_ST_ON_CALL</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_CLOSE_CALL</b>, 
+<b>GSM_ST_ERROR</b>, 
+<b>GSM_ST_UNKNOWN</b> = 0xff, 
+<b>WIFI_NO_ERROR</b> = 0x00, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_TIMEOUT</b>, 
+<b>WIFI_ERROR_INVALID_ARG</b>, 
+<b>WIFI_ERROR_UNEXPECTED_RESPONSE</b>, 
+<b>WIFI_ERROR_UNEXPECTED_STATE</b>, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_NOT_INITIALIZED</b>, 
+<b>WIFI_ERROR_BUFFER_NULL</b>, 
+<b>WIFI_ERROR_BUFFER_OVERFLOW</b>, 
+<b>WIFI_ERROR_AUTH</b>, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_ESP8266</b>, 
+<b>WIFI_ERROR_CONNECTION</b>, 
+<b>WIFI_ERROR_SENDING</b>, 
+<b>WIFI_ERROR_UNKNOWN</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_DEINITIALIZED</b> = 0x00, 
+<b>WIFI_ST_INITIALIZING</b>, 
+<b>WIFI_ST_ECHO_OFF</b>, 
+<b>WIFI_ST_SET_MODE</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_INITIALIZED</b>, 
+<b>WIFI_ST_DISCONNECTED</b>, 
+<b>WIFI_ST_CONNECTING</b>, 
+<b>WIFI_ST_DHCP</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_WPA</b>, 
+<b>WIFI_ST_CONNECT</b>, 
+<b>WIFI_ST_CONNECTED</b>, 
+<b>WIFI_ST_SLEEPING</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_DISCONNECTING</b>, 
+<b>WIFI_ST_TCP_CONNECTING</b>, 
+<b>WIFI_ST_TCP_BDATA</b>, 
+<b>WIFI_ST_TCP_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_TCP_CHECK_CID</b>, 
+<b>WIFI_ST_TCP_TRANSMITTING</b>, 
+<b>WIFI_ST_TCP_RECEIVING</b>, 
+<b>WIFI_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>MQTT_ST_CONNECTING</b>, 
+<b>MQTT_ST_CONNECT</b>, 
+<b>MQTT_ST_CONNECTED</b>, 
+<b>MQTT_ST_SUBSCRIBING</b>, 
+<br />
+&#160;&#160;<b>MQTT_ST_PUBLISHING</b>, 
+<b>MQTT_ST_DISCONNECTING</b>, 
+<b>MQTT_ST_DISCONNECTED</b>, 
+<b>MQTT_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_UNKNOWN</b> = 0xff
+<br />
+ }</td></tr>
+<tr class="separator:a8c1dfc1ccf00a08192611433ee7f17b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c1dfc1ccf00a08192611433ee7f17b4"><td class="memItemLeft" align="right" valign="top"><a id="a8c1dfc1ccf00a08192611433ee7f17b4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>__attribute__</b> { <br />
+&#160;&#160;<b>AT_ST_SND</b> = 0x00, 
+<b>AT_ST_SND_OK</b>, 
+<b>AT_ST_RCV_WAITING</b>, 
+<b>AT_ST_RCV_OK</b>, 
+<br />
+&#160;&#160;<b>AT_ST_RCV_OK_PARAM</b>, 
+<b>AT_ST_ERROR</b>, 
+<b>AT_ST_TIMEOUT</b>, 
+<b>BT_NO_ERROR</b> = 0x00, 
+<br />
+&#160;&#160;<b>BT_ERROR_TIMEOUT</b>, 
+<b>BT_ERROR_INVALID_ARG</b>, 
+<b>BT_ERROR_UNEXPECTED_RESPONSE</b>, 
+<b>BT_ERROR_UNEXPECTED_STATE</b>, 
+<br />
+&#160;&#160;<b>BT_ERROR_NOT_INITIALIZED</b>, 
+<b>BT_ERROR_BUFFER_NULL</b>, 
+<b>BT_ERROR_BUFFER_OVERFLOW</b>, 
+<b>BT_ERROR_CONNECTION</b>, 
+<br />
+&#160;&#160;<b>BT_ERROR_SENDING</b>, 
+<b>BT_ERROR_UNKNOWN</b>, 
+<b>BT_ST_DEINITIALIZED</b> = 0x00, 
+<b>BT_ST_INITIALIZING</b>, 
+<br />
+&#160;&#160;<b>BT_ST_ECHO_OFF</b>, 
+<b>BT_ST_SET_MODE</b>, 
+<b>BT_ST_INITIALIZED</b>, 
+<b>BT_ST_DISCONNECTED</b>, 
+<br />
+&#160;&#160;<b>BT_ST_CONNECTING</b>, 
+<b>BT_ST_CONNECT</b>, 
+<b>BT_ST_CONNECTED</b>, 
+<b>BT_ST_SLEEPING</b>, 
+<br />
+&#160;&#160;<b>BT_ST_DISCONNECTING</b>, 
+<b>BT_ST_TCP_CONNECTING</b>, 
+<b>BT_ST_TCP_BDATA</b>, 
+<b>BT_ST_TCP_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>BT_ST_TCP_CHECK_CID</b>, 
+<b>BT_ST_TCP_TRANSMITTING</b>, 
+<b>BT_ST_TCP_RECEIVING</b>, 
+<b>BT_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>BT_ST_UNKNOWN</b> = 0xff, 
+<b>SERIAL_PORT1</b> = 0x00, 
+<b>SERIAL_PORT2</b>, 
+<b>SERIAL_PORT3</b>, 
+<br />
+&#160;&#160;<b>GSM_NO_ERROR</b> = 0x00, 
+<b>GSM_ERROR_TIMEOUT</b>, 
+<b>GSM_ERROR_INVALID_ARG</b>, 
+<b>GSM_ERROR_UNEXPECTED_RESPONSE</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_UNEXPECTED_STATE</b>, 
+<b>GSM_ERROR_NOT_INITIALIZED</b>, 
+<b>GSM_ERROR_BUFFER_NULL</b>, 
+<b>GSM_ERROR_BUFFER_OVERFLOW</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_AUTH</b>, 
+<b>GSM_ERROR_ESP8266</b>, 
+<b>GSM_ERROR_CONNECTION</b>, 
+<b>GSM_ERROR_SENDING</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_UNKNOWN</b>, 
+<b>GSM_ST_DEINITIALIZED</b> = 0x00, 
+<b>GSM_ST_INITIALIZING</b>, 
+<b>GSM_ST_ECHO_OFF</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_REGISTER</b>, 
+<b>GSM_ST_INITIALIZED</b>, 
+<b>GSM_ST_DISCONNECTED</b>, 
+<b>GSM_ST_CONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_DHCP</b>, 
+<b>GSM_ST_WPA</b>, 
+<b>GSM_ST_CONNECT</b>, 
+<b>GSM_ST_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_SLEEPING</b>, 
+<b>GSM_ST_DISCONNECTING</b>, 
+<b>GSM_ST_TCP_CONNECTING</b>, 
+<b>GSM_ST_API_CONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_BDATA</b>, 
+<b>GSM_ST_TCP_CONNECTED</b>, 
+<b>GSM_ST_API_CONNECTED</b>, 
+<b>GSM_ST_API_SENDING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_CHECK_CID</b>, 
+<b>GSM_ST_TCP_TRANSMITTING</b>, 
+<b>GSM_ST_TCP_DISCONNECTING</b>, 
+<b>GSM_ST_API_DISCONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_RECEIVING</b>, 
+<b>GSM_ST_SMS_CFG_CSMS</b>, 
+<b>GSM_ST_SMS_CFG_TEXT</b>, 
+<b>GSM_ST_SMS_CFG_CNMI</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_SMS_CONFIGURED</b>, 
+<b>GSM_ST_SMS_MSG_WRITE</b>, 
+<b>GSM_ST_GPS_CFG_RST</b>, 
+<b>GSM_ST_GPS_CFG_ClR</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_GPS_CFG_ACP</b>, 
+<b>GSM_ST_GPS_CFG_START</b>, 
+<b>GSM_ST_GPS_CONFIGURED</b>, 
+<b>GSM_ST_GPS_STARTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_GPS_STARTED</b>, 
+<b>GSM_ST_GPS_STOPPING</b>, 
+<b>GSM_ST_CALL</b>, 
+<b>GSM_ST_ON_CALL</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_CLOSE_CALL</b>, 
+<b>GSM_ST_ERROR</b>, 
+<b>GSM_ST_UNKNOWN</b> = 0xff, 
+<b>WIFI_NO_ERROR</b> = 0x00, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_TIMEOUT</b>, 
+<b>WIFI_ERROR_INVALID_ARG</b>, 
+<b>WIFI_ERROR_UNEXPECTED_RESPONSE</b>, 
+<b>WIFI_ERROR_UNEXPECTED_STATE</b>, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_NOT_INITIALIZED</b>, 
+<b>WIFI_ERROR_BUFFER_NULL</b>, 
+<b>WIFI_ERROR_BUFFER_OVERFLOW</b>, 
+<b>WIFI_ERROR_AUTH</b>, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_ESP8266</b>, 
+<b>WIFI_ERROR_CONNECTION</b>, 
+<b>WIFI_ERROR_SENDING</b>, 
+<b>WIFI_ERROR_UNKNOWN</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_DEINITIALIZED</b> = 0x00, 
+<b>WIFI_ST_INITIALIZING</b>, 
+<b>WIFI_ST_ECHO_OFF</b>, 
+<b>WIFI_ST_SET_MODE</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_INITIALIZED</b>, 
+<b>WIFI_ST_DISCONNECTED</b>, 
+<b>WIFI_ST_CONNECTING</b>, 
+<b>WIFI_ST_DHCP</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_WPA</b>, 
+<b>WIFI_ST_CONNECT</b>, 
+<b>WIFI_ST_CONNECTED</b>, 
+<b>WIFI_ST_SLEEPING</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_DISCONNECTING</b>, 
+<b>WIFI_ST_TCP_CONNECTING</b>, 
+<b>WIFI_ST_TCP_BDATA</b>, 
+<b>WIFI_ST_TCP_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_TCP_CHECK_CID</b>, 
+<b>WIFI_ST_TCP_TRANSMITTING</b>, 
+<b>WIFI_ST_TCP_RECEIVING</b>, 
+<b>WIFI_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>MQTT_ST_CONNECTING</b>, 
+<b>MQTT_ST_CONNECT</b>, 
+<b>MQTT_ST_CONNECTED</b>, 
+<b>MQTT_ST_SUBSCRIBING</b>, 
+<br />
+&#160;&#160;<b>MQTT_ST_PUBLISHING</b>, 
+<b>MQTT_ST_DISCONNECTING</b>, 
+<b>MQTT_ST_DISCONNECTED</b>, 
+<b>MQTT_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_UNKNOWN</b> = 0xff
+<br />
+ }</td></tr>
+<tr class="separator:a8c1dfc1ccf00a08192611433ee7f17b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:aec7bd3800784f8c696e81e6f3546648b"><td class="memItemLeft" align="right" valign="top"><a id="aec7bd3800784f8c696e81e6f3546648b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>aligned</b> (1))) WifiError_et</td></tr>
+<tr class="separator:aec7bd3800784f8c696e81e6f3546648b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9feed78714f657b897245c08bf36fa3f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi_gs2101m_8h.html#a9feed78714f657b897245c08bf36fa3f">WIFI_Init</a> (void)</td></tr>
+<tr class="memdesc:a9feed78714f657b897245c08bf36fa3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao WIFI_Init: Inicializa a comunicacao com o modulo wifi a partir do comando basico "at" em seguida envia o comando para desabilitar o "ate0" e por ultimo, envia o comando para "at+wm = 0" para funcionar como station mode.  <a href="#a9feed78714f657b897245c08bf36fa3f">Mais...</a><br /></td></tr>
+<tr class="separator:a9feed78714f657b897245c08bf36fa3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a718834e9a4ec31a08999732b8a718b16"><td class="memItemLeft" align="right" valign="top"><a id="a718834e9a4ec31a08999732b8a718b16"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi_gs2101m_8h.html#a718834e9a4ec31a08999732b8a718b16">WIFI_Deinit</a> (void)</td></tr>
+<tr class="memdesc:a718834e9a4ec31a08999732b8a718b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao WIFI_Deinit: Desinacializa o modulo. <br /></td></tr>
+<tr class="separator:a718834e9a4ec31a08999732b8a718b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba61caf87c1945b7d4f24d36354af168"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi_gs2101m_8h.html#aba61caf87c1945b7d4f24d36354af168">WIFI_ResetModule</a> (void)</td></tr>
+<tr class="memdesc:aba61caf87c1945b7d4f24d36354af168"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao WIFI_ResetModule: Reinicia o modulo.  <a href="#aba61caf87c1945b7d4f24d36354af168">Mais...</a><br /></td></tr>
+<tr class="separator:aba61caf87c1945b7d4f24d36354af168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47bbc4bdbd200604d569b03a1fe4fd42"><td class="memItemLeft" align="right" valign="top"><a id="a47bbc4bdbd200604d569b03a1fe4fd42"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>WIFI_SetSleep</b> (bool sleep)</td></tr>
+<tr class="separator:a47bbc4bdbd200604d569b03a1fe4fd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca39b48885e8317eea5558f7e804d67d"><td class="memItemLeft" align="right" valign="top">WifiState_et&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi_gs2101m_8h.html#aca39b48885e8317eea5558f7e804d67d">WIFI_GetState</a> (void)</td></tr>
+<tr class="memdesc:aca39b48885e8317eea5558f7e804d67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o estado atual do gerenciamento do modulo.  <a href="#aca39b48885e8317eea5558f7e804d67d">Mais...</a><br /></td></tr>
+<tr class="separator:aca39b48885e8317eea5558f7e804d67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af381af62b7bb7404b0e5e7641f314f8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi_gs2101m_8h.html#af381af62b7bb7404b0e5e7641f314f8c">WIFI_Connect</a> (const char *ssid, const char *pass)</td></tr>
+<tr class="memdesc:af381af62b7bb7404b0e5e7641f314f8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao Connect: Realiza a conexao do modulo com um AP(access point). Antes da conexao sao enviados alguns comandos de configuracao: "at+ndhcp=1,ssid,1" para habilitar o dhcp, "at+ wwpa=password" informa ao modula qual e o password da rede de conexao e por fim se conecta com o modulo atraves do comando "at+wa=ssid".  <a href="#af381af62b7bb7404b0e5e7641f314f8c">Mais...</a><br /></td></tr>
+<tr class="separator:af381af62b7bb7404b0e5e7641f314f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b85915aa80b53ce66fc873ecae7f6e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi_gs2101m_8h.html#af6b85915aa80b53ce66fc873ecae7f6e">WIFI_IsConnected</a> (void)</td></tr>
+<tr class="memdesc:af6b85915aa80b53ce66fc873ecae7f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao WIFI_IsConnected: Verifica se o modulo esta conectado a rede wifi.  <a href="#af6b85915aa80b53ce66fc873ecae7f6e">Mais...</a><br /></td></tr>
+<tr class="separator:af6b85915aa80b53ce66fc873ecae7f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf02679d83eb7505805bcc6a88563837"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi_gs2101m_8h.html#abf02679d83eb7505805bcc6a88563837">WIFI_GetIp</a> (char *ip)</td></tr>
+<tr class="memdesc:abf02679d83eb7505805bcc6a88563837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao WIFI_GetIp: Obtem o endereco de IP Local.  <a href="#abf02679d83eb7505805bcc6a88563837">Mais...</a><br /></td></tr>
+<tr class="separator:abf02679d83eb7505805bcc6a88563837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c4bc7c63890e92fa7b426968fcdbe89"><td class="memItemLeft" align="right" valign="top"><a id="a0c4bc7c63890e92fa7b426968fcdbe89"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi_gs2101m_8h.html#a0c4bc7c63890e92fa7b426968fcdbe89">WIFI_Disconnect</a> (void)</td></tr>
+<tr class="memdesc:a0c4bc7c63890e92fa7b426968fcdbe89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao WIFI_Disconnect: Fecha a conexao do modulo wifi com o AP(acess point) a partir do comando "at+wd". <br /></td></tr>
+<tr class="separator:a0c4bc7c63890e92fa7b426968fcdbe89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e2423133f661b6bc4990e7692acf98b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi_gs2101m_8h.html#a8e2423133f661b6bc4990e7692acf98b">WIFI_TcpConnect</a> (const char *address, uint16_t port)</td></tr>
+<tr class="memdesc:a8e2423133f661b6bc4990e7692acf98b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao WIFI_TcpConnect: Abre um socket tcp entre um cliente(ex. modulo) e um servidor de destino (ex. pc) atraves do comando "at+nctcp=address, port".  <a href="#a8e2423133f661b6bc4990e7692acf98b">Mais...</a><br /></td></tr>
+<tr class="separator:a8e2423133f661b6bc4990e7692acf98b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c9a49a098c220d5d5401f1d0265d07"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi_gs2101m_8h.html#a00c9a49a098c220d5d5401f1d0265d07">WIFI_TcpGetCids</a> (void)</td></tr>
+<tr class="memdesc:a00c9a49a098c220d5d5401f1d0265d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao WIFI_TcpGetCids: Indentifica a mascara dos CIDs (connection ID) das conexoes ativas.  <a href="#a00c9a49a098c220d5d5401f1d0265d07">Mais...</a><br /></td></tr>
+<tr class="separator:a00c9a49a098c220d5d5401f1d0265d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe82ddd1cc5e3fe10433ccf257d09d99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi_gs2101m_8h.html#afe82ddd1cc5e3fe10433ccf257d09d99">WIFI_TcpWrite</a> (uint8_t cid, uint8_t *data, uint16_t dataLen)</td></tr>
+<tr class="memdesc:afe82ddd1cc5e3fe10433ccf257d09d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao TcpWrite: Envia dados via TCP para o host remoto.  <a href="#afe82ddd1cc5e3fe10433ccf257d09d99">Mais...</a><br /></td></tr>
+<tr class="separator:afe82ddd1cc5e3fe10433ccf257d09d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7363d9e719919f56e9f159d01c09b29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi_gs2101m_8h.html#af7363d9e719919f56e9f159d01c09b29">WIFI_TcpDisconnect</a> (uint8_t cid)</td></tr>
+<tr class="memdesc:af7363d9e719919f56e9f159d01c09b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao WIFI_TcpDisconnect: Desconecta de uma conexao TCP.  <a href="#af7363d9e719919f56e9f159d01c09b29">Mais...</a><br /></td></tr>
+<tr class="separator:af7363d9e719919f56e9f159d01c09b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98434218265bac6a00cf1eae4cb75032"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi_gs2101m_8h.html#a98434218265bac6a00cf1eae4cb75032">WIFI_HandleReceivedData</a> (uint8_t data)</td></tr>
+<tr class="memdesc:a98434218265bac6a00cf1eae4cb75032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao WIFI_HandleReceivedData: Trata os dados TCP recebidos.  <a href="#a98434218265bac6a00cf1eae4cb75032">Mais...</a><br /></td></tr>
+<tr class="separator:a98434218265bac6a00cf1eae4cb75032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeddf356a5aa46ad7bfc076c547ab153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi_gs2101m_8h.html#abeddf356a5aa46ad7bfc076c547ab153">WIFI_TcpReadCallback</a> (uint8_t data, SerialPort_et port)</td></tr>
+<tr class="memdesc:abeddf356a5aa46ad7bfc076c547ab153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao WIFI_TcpReadCallback: Trata a recepcao dos dados TCP.  <a href="#abeddf356a5aa46ad7bfc076c547ab153">Mais...</a><br /></td></tr>
+<tr class="separator:abeddf356a5aa46ad7bfc076c547ab153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e0df7f7969c0ed81d180efb3f8a46b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi_gs2101m_8h.html#af2e0df7f7969c0ed81d180efb3f8a46b">MQTT_Init</a> (void)</td></tr>
+<tr class="separator:af2e0df7f7969c0ed81d180efb3f8a46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1fbed1b100664bcfdd0cce57f783175"><td class="memItemLeft" align="right" valign="top"><a id="aa1fbed1b100664bcfdd0cce57f783175"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_Deinit</b> (void)</td></tr>
+<tr class="separator:aa1fbed1b100664bcfdd0cce57f783175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7228c4cae40b551385bff47624b6d02"><td class="memItemLeft" align="right" valign="top"><a id="aa7228c4cae40b551385bff47624b6d02"></a>
+WifiState_et&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_GetState</b> (void)</td></tr>
+<tr class="separator:aa7228c4cae40b551385bff47624b6d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68026adda269506bd49608c8cad911bc"><td class="memItemLeft" align="right" valign="top"><a id="a68026adda269506bd49608c8cad911bc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_IsConnected</b> (void)</td></tr>
+<tr class="separator:a68026adda269506bd49608c8cad911bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5a9ad715bfc75847054554bd3070a54"><td class="memItemLeft" align="right" valign="top"><a id="ae5a9ad715bfc75847054554bd3070a54"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_Connect</b> (const char *address, uint16_t port, const char *clientId, const char *usr, const char *pwd)</td></tr>
+<tr class="separator:ae5a9ad715bfc75847054554bd3070a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bcc2859605b4be0db095dacdc324899"><td class="memItemLeft" align="right" valign="top"><a id="a4bcc2859605b4be0db095dacdc324899"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_Publish</b> (uint8_t cid, const char *topic, uint32_t len, uint8_t *data, uint8_t qos, bool retain)</td></tr>
+<tr class="separator:a4bcc2859605b4be0db095dacdc324899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2271a15c13e9cd8ff5eca7cf508024a"><td class="memItemLeft" align="right" valign="top"><a id="af2271a15c13e9cd8ff5eca7cf508024a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_Write</b> (uint8_t cid, uint8_t *data, uint16_t dataLen)</td></tr>
+<tr class="separator:af2271a15c13e9cd8ff5eca7cf508024a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23bc692d441e0d6b99a3caab384c2ca"><td class="memItemLeft" align="right" valign="top"><a id="aa23bc692d441e0d6b99a3caab384c2ca"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_Subscribe</b> (uint8_t cid, const char *topic, uint8_t qos, uint16_t timeout)</td></tr>
+<tr class="separator:aa23bc692d441e0d6b99a3caab384c2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f24f6b101692d4a5c31eadb581a0ef"><td class="memItemLeft" align="right" valign="top"><a id="a61f24f6b101692d4a5c31eadb581a0ef"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_Ping</b> (uint8_t cid, uint16_t timeout)</td></tr>
+<tr class="separator:a61f24f6b101692d4a5c31eadb581a0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e40e214effa51634aaf8e3661949b5"><td class="memItemLeft" align="right" valign="top"><a id="ae3e40e214effa51634aaf8e3661949b5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_Disconnect</b> (uint8_t cid)</td></tr>
+<tr class="separator:ae3e40e214effa51634aaf8e3661949b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb7b06055521a3fde37a0cd872dd2452"><td class="memItemLeft" align="right" valign="top"><a id="aeb7b06055521a3fde37a0cd872dd2452"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MQTT_ReadCallback</b> (uint8_t data)</td></tr>
+<tr class="separator:aeb7b06055521a3fde37a0cd872dd2452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>A biblioteca GS2101M implementa funcionalidades para o modulo Telit GS2101M. </p>
+<p>Esta biblioteca e utilizada por todos os exemplos do modulo wifi GS2101M.</p>
+<dl class="section author"><dt>Autor</dt><dd>Jonas de Luna Ieno, Lucas S. Feitosa, Pedro Granville e Vinicius Roosvelt.</dd></dl>
+<dl class="section version"><dt>Versão</dt><dd>1.00 </dd></dl>
+
+<p class="definition">Definição no arquivo <a class="el" href="wifi_gs2101m_8h_source.html">wifiGs2101m.h</a>.</p>
+</div><h2 class="groupheader">Funções</h2>
+<a id="af2e0df7f7969c0ed81d180efb3f8a46b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2e0df7f7969c0ed81d180efb3f8a46b">&#9670;&nbsp;</a></span>MQTT_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MQTT_Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>MQTT Functions </p>
+
+</div>
+</div>
+<a id="af381af62b7bb7404b0e5e7641f314f8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af381af62b7bb7404b0e5e7641f314f8c">&#9670;&nbsp;</a></span>WIFI_Connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WIFI_Connect </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ssid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pass</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao Connect: Realiza a conexao do modulo com um AP(access point). Antes da conexao sao enviados alguns comandos de configuracao: "at+ndhcp=1,ssid,1" para habilitar o dhcp, "at+ wwpa=password" informa ao modula qual e o password da rede de conexao e por fim se conecta com o modulo atraves do comando "at+wa=ssid". </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ssid</td><td>da rede que se deseja conectar. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">password</td><td>Senha da rede que se deseja conectar.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>retorna 1 se receber resposta "ok" do modulo e 0 se receber "error" </dd></dl>
+
+</div>
+</div>
+<a id="abf02679d83eb7505805bcc6a88563837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf02679d83eb7505805bcc6a88563837">&#9670;&nbsp;</a></span>WIFI_GetIp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WIFI_GetIp </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao WIFI_GetIp: Obtem o endereco de IP Local. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ip</td><td>Retorna o endereco de IP</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="aca39b48885e8317eea5558f7e804d67d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca39b48885e8317eea5558f7e804d67d">&#9670;&nbsp;</a></span>WIFI_GetState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WifiState_et WIFI_GetState </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o estado atual do gerenciamento do modulo. </p>
+<dl class="section return"><dt>Retorna</dt><dd>retorna 1 se receber resposta "ok" do modulo e 0 se receber "error" </dd></dl>
+
+</div>
+</div>
+<a id="a98434218265bac6a00cf1eae4cb75032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98434218265bac6a00cf1eae4cb75032">&#9670;&nbsp;</a></span>WIFI_HandleReceivedData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WIFI_HandleReceivedData </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao WIFI_HandleReceivedData: Trata os dados TCP recebidos. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Recebe os dados proveniente da conexao TCP.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>retorna 1 se receber resposta "ok" do modulo e 0 se receber "error" </dd></dl>
+
+</div>
+</div>
+<a id="a9feed78714f657b897245c08bf36fa3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9feed78714f657b897245c08bf36fa3f">&#9670;&nbsp;</a></span>WIFI_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WIFI_Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao WIFI_Init: Inicializa a comunicacao com o modulo wifi a partir do comando basico "at" em seguida envia o comando para desabilitar o "ate0" e por ultimo, envia o comando para "at+wm = 0" para funcionar como station mode. </p>
+<dl class="section return"><dt>Retorna</dt><dd>retorna 1 se receber resposta "ok" do modulo e 0 se receber "error" </dd></dl>
+
+</div>
+</div>
+<a id="af6b85915aa80b53ce66fc873ecae7f6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6b85915aa80b53ce66fc873ecae7f6e">&#9670;&nbsp;</a></span>WIFI_IsConnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WIFI_IsConnected </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao WIFI_IsConnected: Verifica se o modulo esta conectado a rede wifi. </p>
+<dl class="section return"><dt>Retorna</dt><dd>retorna 1 se se estiver conectado a rede e 0 se nao. </dd></dl>
+
+</div>
+</div>
+<a id="aba61caf87c1945b7d4f24d36354af168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba61caf87c1945b7d4f24d36354af168">&#9670;&nbsp;</a></span>WIFI_ResetModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WIFI_ResetModule </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao WIFI_ResetModule: Reinicia o modulo. </p>
+<dl class="section return"><dt>Retorna</dt><dd>retorna 1 se receber resposta "ok" do modulo e 0 se receber "error" </dd></dl>
+
+</div>
+</div>
+<a id="a8e2423133f661b6bc4990e7692acf98b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e2423133f661b6bc4990e7692acf98b">&#9670;&nbsp;</a></span>WIFI_TcpConnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t WIFI_TcpConnect </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao WIFI_TcpConnect: Abre um socket tcp entre um cliente(ex. modulo) e um servidor de destino (ex. pc) atraves do comando "at+nctcp=address, port". </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addres</td><td>recebe o endereco ip para conexao de destino. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>recebe a porta para conexao de destino.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna o id da conexao que foi aberta (CID). </dd></dl>
+
+</div>
+</div>
+<a id="af7363d9e719919f56e9f159d01c09b29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7363d9e719919f56e9f159d01c09b29">&#9670;&nbsp;</a></span>WIFI_TcpDisconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WIFI_TcpDisconnect </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao WIFI_TcpDisconnect: Desconecta de uma conexao TCP. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cid</td><td>recebe o CID (connection ID) da conexao a ser finalizada</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>retorna 1 se receber resposta "ok" do modulo e 0 se receber "error" </dd></dl>
+
+</div>
+</div>
+<a id="a00c9a49a098c220d5d5401f1d0265d07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00c9a49a098c220d5d5401f1d0265d07">&#9670;&nbsp;</a></span>WIFI_TcpGetCids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t WIFI_TcpGetCids </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao WIFI_TcpGetCids: Indentifica a mascara dos CIDs (connection ID) das conexoes ativas. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna a mascara dos CIDs (connection ID) das conexoes ativas </dd></dl>
+
+</div>
+</div>
+<a id="abeddf356a5aa46ad7bfc076c547ab153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeddf356a5aa46ad7bfc076c547ab153">&#9670;&nbsp;</a></span>WIFI_TcpReadCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WIFI_TcpReadCallback </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SerialPort_et&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao WIFI_TcpReadCallback: Trata a recepcao dos dados TCP. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>dado.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">SerialPort_et</td><td>port: porta de comunicacao. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="native_mqtt_8c_source.html#l00209">209</a> do arquivo <a class="el" href="native_mqtt_8c_source.html">nativeMqtt.c</a>.</p>
+
+</div>
+</div>
+<a id="afe82ddd1cc5e3fe10433ccf257d09d99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe82ddd1cc5e3fe10433ccf257d09d99">&#9670;&nbsp;</a></span>WIFI_TcpWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WIFI_TcpWrite </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao TcpWrite: Envia dados via TCP para o host remoto. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cid</td><td>envia o id da conexao que foi aberta . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>recebo dados para envio. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>envia o tamanho da sting de dados</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>retorna 1 se receber resposta "ok" do modulo e 0 se receber "error" </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

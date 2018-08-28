@@ -1,0 +1,1399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Libs: Referência do Arquivo telit-libs/asf/libs/inc/gsmXE910.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-sm.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Libs
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ee39d01ca2cba74545994a549664c8be.html">telit-libs</a></li><li class="navelem"><a class="el" href="dir_52b2fffb8f7881b0ea7452242253f08c.html">asf</a></li><li class="navelem"><a class="el" href="dir_4a11be5c94f2c165715ff4ced81b7572.html">libs</a></li><li class="navelem"><a class="el" href="dir_c10ddc9bbc53b0251854ae18520a82d9.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definições e Macros</a> &#124;
+<a href="#enum-members">Enumerações</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo gsmXE910.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A biblioteca XE910 implementa funcionalidades para os modulos Telit da familia x910.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+</div>
+<p><a href="gsm_x_e910_8h_source.html">Vá para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:abba6c31aa8f03c5e26f3a6864021904e"><td class="memItemLeft" align="right" valign="top"><a id="abba6c31aa8f03c5e26f3a6864021904e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GSM_IP_MAX_LEN</b>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:abba6c31aa8f03c5e26f3a6864021904e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7ff0bda67c9d3f13c790b486f48787e"><td class="memItemLeft" align="right" valign="top"><a id="ab7ff0bda67c9d3f13c790b486f48787e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GSM_APN_MAX_LEN</b>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:ab7ff0bda67c9d3f13c790b486f48787e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f221cc7bd0db4036d5b5f4fbf9c5c46"><td class="memItemLeft" align="right" valign="top"><a id="a5f221cc7bd0db4036d5b5f4fbf9c5c46"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GSM_PROTO_MAX_LEN</b>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a5f221cc7bd0db4036d5b5f4fbf9c5c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c5c1f8d33aa48df71b371a4c0b1e8a"><td class="memItemLeft" align="right" valign="top"><a id="ac0c5c1f8d33aa48df71b371a4c0b1e8a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GSM_TCP_ADDR_MAX_LEN</b>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:ac0c5c1f8d33aa48df71b371a4c0b1e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c0a37bc7e018ed110e59e72ec939e6b"><td class="memItemLeft" align="right" valign="top"><a id="a7c0a37bc7e018ed110e59e72ec939e6b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GSM_API_KEY_MAX_LEN</b>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a7c0a37bc7e018ed110e59e72ec939e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7f533875ad3462965058bd2821be6e4"><td class="memItemLeft" align="right" valign="top"><a id="af7f533875ad3462965058bd2821be6e4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GSM_API_VALUE_MAX_LEN</b>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:af7f533875ad3462965058bd2821be6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad60547b029305dddb854aa2f5a97d534"><td class="memItemLeft" align="right" valign="top"><a id="ad60547b029305dddb854aa2f5a97d534"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GSM_PHONE_MAX_LEN</b>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:ad60547b029305dddb854aa2f5a97d534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100df2e0831ff3987b89f4821953220e"><td class="memItemLeft" align="right" valign="top"><a id="a100df2e0831ff3987b89f4821953220e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>STR_SEND_OK</b>&#160;&#160;&#160;&quot;&gt; &quot;</td></tr>
+<tr class="separator:a100df2e0831ff3987b89f4821953220e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aa7ee412d9ddc1d8ae2f5f146204b8a"><td class="memItemLeft" align="right" valign="top"><a id="a1aa7ee412d9ddc1d8ae2f5f146204b8a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>STR_GPS_RESP</b>&#160;&#160;&#160;&quot;$GPSNMUN: $GPGGA&quot;</td></tr>
+<tr class="separator:a1aa7ee412d9ddc1d8ae2f5f146204b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5cb0f919409db8d97f98ad2e2f898b9"><td class="memItemLeft" align="right" valign="top"><a id="ac5cb0f919409db8d97f98ad2e2f898b9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>STR_GPS_NOSIGNAL</b>&#160;&#160;&#160;&quot;$GPSNMUN: $GPGGA,,,,,,0,,,,M,,M&quot;</td></tr>
+<tr class="separator:ac5cb0f919409db8d97f98ad2e2f898b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e2c0273d504acb985d2f87cdc9a70c"><td class="memItemLeft" align="right" valign="top"><a id="ae9e2c0273d504acb985d2f87cdc9a70c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>STR_GPS_END_DATA</b>&#160;&#160;&#160;&quot;,M,,M,&quot;</td></tr>
+<tr class="separator:ae9e2c0273d504acb985d2f87cdc9a70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa82d4af3efdd1e3edac3a83a9e918d7e"><td class="memItemLeft" align="right" valign="top"><a id="aa82d4af3efdd1e3edac3a83a9e918d7e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>STR_MSG_RCV</b>&#160;&#160;&#160;&quot;+CMT:&quot;</td></tr>
+<tr class="separator:aa82d4af3efdd1e3edac3a83a9e918d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerações</h2></td></tr>
+<tr class="memitem:a8c1dfc1ccf00a08192611433ee7f17b4"><td class="memItemLeft" align="right" valign="top"><a id="a8c1dfc1ccf00a08192611433ee7f17b4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>__attribute__</b> { <br />
+&#160;&#160;<b>AT_ST_SND</b> = 0x00, 
+<b>AT_ST_SND_OK</b>, 
+<b>AT_ST_RCV_WAITING</b>, 
+<b>AT_ST_RCV_OK</b>, 
+<br />
+&#160;&#160;<b>AT_ST_RCV_OK_PARAM</b>, 
+<b>AT_ST_ERROR</b>, 
+<b>AT_ST_TIMEOUT</b>, 
+<b>BT_NO_ERROR</b> = 0x00, 
+<br />
+&#160;&#160;<b>BT_ERROR_TIMEOUT</b>, 
+<b>BT_ERROR_INVALID_ARG</b>, 
+<b>BT_ERROR_UNEXPECTED_RESPONSE</b>, 
+<b>BT_ERROR_UNEXPECTED_STATE</b>, 
+<br />
+&#160;&#160;<b>BT_ERROR_NOT_INITIALIZED</b>, 
+<b>BT_ERROR_BUFFER_NULL</b>, 
+<b>BT_ERROR_BUFFER_OVERFLOW</b>, 
+<b>BT_ERROR_CONNECTION</b>, 
+<br />
+&#160;&#160;<b>BT_ERROR_SENDING</b>, 
+<b>BT_ERROR_UNKNOWN</b>, 
+<b>BT_ST_DEINITIALIZED</b> = 0x00, 
+<b>BT_ST_INITIALIZING</b>, 
+<br />
+&#160;&#160;<b>BT_ST_ECHO_OFF</b>, 
+<b>BT_ST_SET_MODE</b>, 
+<b>BT_ST_INITIALIZED</b>, 
+<b>BT_ST_DISCONNECTED</b>, 
+<br />
+&#160;&#160;<b>BT_ST_CONNECTING</b>, 
+<b>BT_ST_CONNECT</b>, 
+<b>BT_ST_CONNECTED</b>, 
+<b>BT_ST_SLEEPING</b>, 
+<br />
+&#160;&#160;<b>BT_ST_DISCONNECTING</b>, 
+<b>BT_ST_TCP_CONNECTING</b>, 
+<b>BT_ST_TCP_BDATA</b>, 
+<b>BT_ST_TCP_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>BT_ST_TCP_CHECK_CID</b>, 
+<b>BT_ST_TCP_TRANSMITTING</b>, 
+<b>BT_ST_TCP_RECEIVING</b>, 
+<b>BT_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>BT_ST_UNKNOWN</b> = 0xff, 
+<b>SERIAL_PORT1</b> = 0x00, 
+<b>SERIAL_PORT2</b>, 
+<b>SERIAL_PORT3</b>, 
+<br />
+&#160;&#160;<b>GSM_NO_ERROR</b> = 0x00, 
+<b>GSM_ERROR_TIMEOUT</b>, 
+<b>GSM_ERROR_INVALID_ARG</b>, 
+<b>GSM_ERROR_UNEXPECTED_RESPONSE</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_UNEXPECTED_STATE</b>, 
+<b>GSM_ERROR_NOT_INITIALIZED</b>, 
+<b>GSM_ERROR_BUFFER_NULL</b>, 
+<b>GSM_ERROR_BUFFER_OVERFLOW</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_AUTH</b>, 
+<b>GSM_ERROR_ESP8266</b>, 
+<b>GSM_ERROR_CONNECTION</b>, 
+<b>GSM_ERROR_SENDING</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_UNKNOWN</b>, 
+<b>GSM_ST_DEINITIALIZED</b> = 0x00, 
+<b>GSM_ST_INITIALIZING</b>, 
+<b>GSM_ST_ECHO_OFF</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_REGISTER</b>, 
+<b>GSM_ST_INITIALIZED</b>, 
+<b>GSM_ST_DISCONNECTED</b>, 
+<b>GSM_ST_CONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_DHCP</b>, 
+<b>GSM_ST_WPA</b>, 
+<b>GSM_ST_CONNECT</b>, 
+<b>GSM_ST_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_SLEEPING</b>, 
+<b>GSM_ST_DISCONNECTING</b>, 
+<b>GSM_ST_TCP_CONNECTING</b>, 
+<b>GSM_ST_API_CONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_BDATA</b>, 
+<b>GSM_ST_TCP_CONNECTED</b>, 
+<b>GSM_ST_API_CONNECTED</b>, 
+<b>GSM_ST_API_SENDING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_CHECK_CID</b>, 
+<b>GSM_ST_TCP_TRANSMITTING</b>, 
+<b>GSM_ST_TCP_DISCONNECTING</b>, 
+<b>GSM_ST_API_DISCONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_RECEIVING</b>, 
+<b>GSM_ST_SMS_CFG_CSMS</b>, 
+<b>GSM_ST_SMS_CFG_TEXT</b>, 
+<b>GSM_ST_SMS_CFG_CNMI</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_SMS_CONFIGURED</b>, 
+<b>GSM_ST_SMS_MSG_WRITE</b>, 
+<b>GSM_ST_GPS_CFG_RST</b>, 
+<b>GSM_ST_GPS_CFG_ClR</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_GPS_CFG_ACP</b>, 
+<b>GSM_ST_GPS_CFG_START</b>, 
+<b>GSM_ST_GPS_CONFIGURED</b>, 
+<b>GSM_ST_GPS_STARTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_GPS_STARTED</b>, 
+<b>GSM_ST_GPS_STOPPING</b>, 
+<b>GSM_ST_CALL</b>, 
+<b>GSM_ST_ON_CALL</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_CLOSE_CALL</b>, 
+<b>GSM_ST_ERROR</b>, 
+<b>GSM_ST_UNKNOWN</b> = 0xff, 
+<b>WIFI_NO_ERROR</b> = 0x00, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_TIMEOUT</b>, 
+<b>WIFI_ERROR_INVALID_ARG</b>, 
+<b>WIFI_ERROR_UNEXPECTED_RESPONSE</b>, 
+<b>WIFI_ERROR_UNEXPECTED_STATE</b>, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_NOT_INITIALIZED</b>, 
+<b>WIFI_ERROR_BUFFER_NULL</b>, 
+<b>WIFI_ERROR_BUFFER_OVERFLOW</b>, 
+<b>WIFI_ERROR_AUTH</b>, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_ESP8266</b>, 
+<b>WIFI_ERROR_CONNECTION</b>, 
+<b>WIFI_ERROR_SENDING</b>, 
+<b>WIFI_ERROR_UNKNOWN</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_DEINITIALIZED</b> = 0x00, 
+<b>WIFI_ST_INITIALIZING</b>, 
+<b>WIFI_ST_ECHO_OFF</b>, 
+<b>WIFI_ST_SET_MODE</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_INITIALIZED</b>, 
+<b>WIFI_ST_DISCONNECTED</b>, 
+<b>WIFI_ST_CONNECTING</b>, 
+<b>WIFI_ST_DHCP</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_WPA</b>, 
+<b>WIFI_ST_CONNECT</b>, 
+<b>WIFI_ST_CONNECTED</b>, 
+<b>WIFI_ST_SLEEPING</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_DISCONNECTING</b>, 
+<b>WIFI_ST_TCP_CONNECTING</b>, 
+<b>WIFI_ST_TCP_BDATA</b>, 
+<b>WIFI_ST_TCP_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_TCP_CHECK_CID</b>, 
+<b>WIFI_ST_TCP_TRANSMITTING</b>, 
+<b>WIFI_ST_TCP_RECEIVING</b>, 
+<b>WIFI_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>MQTT_ST_CONNECTING</b>, 
+<b>MQTT_ST_CONNECT</b>, 
+<b>MQTT_ST_CONNECTED</b>, 
+<b>MQTT_ST_SUBSCRIBING</b>, 
+<br />
+&#160;&#160;<b>MQTT_ST_PUBLISHING</b>, 
+<b>MQTT_ST_DISCONNECTING</b>, 
+<b>MQTT_ST_DISCONNECTED</b>, 
+<b>MQTT_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_UNKNOWN</b> = 0xff
+<br />
+ }</td></tr>
+<tr class="separator:a8c1dfc1ccf00a08192611433ee7f17b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c1dfc1ccf00a08192611433ee7f17b4"><td class="memItemLeft" align="right" valign="top"><a id="a8c1dfc1ccf00a08192611433ee7f17b4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>__attribute__</b> { <br />
+&#160;&#160;<b>AT_ST_SND</b> = 0x00, 
+<b>AT_ST_SND_OK</b>, 
+<b>AT_ST_RCV_WAITING</b>, 
+<b>AT_ST_RCV_OK</b>, 
+<br />
+&#160;&#160;<b>AT_ST_RCV_OK_PARAM</b>, 
+<b>AT_ST_ERROR</b>, 
+<b>AT_ST_TIMEOUT</b>, 
+<b>BT_NO_ERROR</b> = 0x00, 
+<br />
+&#160;&#160;<b>BT_ERROR_TIMEOUT</b>, 
+<b>BT_ERROR_INVALID_ARG</b>, 
+<b>BT_ERROR_UNEXPECTED_RESPONSE</b>, 
+<b>BT_ERROR_UNEXPECTED_STATE</b>, 
+<br />
+&#160;&#160;<b>BT_ERROR_NOT_INITIALIZED</b>, 
+<b>BT_ERROR_BUFFER_NULL</b>, 
+<b>BT_ERROR_BUFFER_OVERFLOW</b>, 
+<b>BT_ERROR_CONNECTION</b>, 
+<br />
+&#160;&#160;<b>BT_ERROR_SENDING</b>, 
+<b>BT_ERROR_UNKNOWN</b>, 
+<b>BT_ST_DEINITIALIZED</b> = 0x00, 
+<b>BT_ST_INITIALIZING</b>, 
+<br />
+&#160;&#160;<b>BT_ST_ECHO_OFF</b>, 
+<b>BT_ST_SET_MODE</b>, 
+<b>BT_ST_INITIALIZED</b>, 
+<b>BT_ST_DISCONNECTED</b>, 
+<br />
+&#160;&#160;<b>BT_ST_CONNECTING</b>, 
+<b>BT_ST_CONNECT</b>, 
+<b>BT_ST_CONNECTED</b>, 
+<b>BT_ST_SLEEPING</b>, 
+<br />
+&#160;&#160;<b>BT_ST_DISCONNECTING</b>, 
+<b>BT_ST_TCP_CONNECTING</b>, 
+<b>BT_ST_TCP_BDATA</b>, 
+<b>BT_ST_TCP_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>BT_ST_TCP_CHECK_CID</b>, 
+<b>BT_ST_TCP_TRANSMITTING</b>, 
+<b>BT_ST_TCP_RECEIVING</b>, 
+<b>BT_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>BT_ST_UNKNOWN</b> = 0xff, 
+<b>SERIAL_PORT1</b> = 0x00, 
+<b>SERIAL_PORT2</b>, 
+<b>SERIAL_PORT3</b>, 
+<br />
+&#160;&#160;<b>GSM_NO_ERROR</b> = 0x00, 
+<b>GSM_ERROR_TIMEOUT</b>, 
+<b>GSM_ERROR_INVALID_ARG</b>, 
+<b>GSM_ERROR_UNEXPECTED_RESPONSE</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_UNEXPECTED_STATE</b>, 
+<b>GSM_ERROR_NOT_INITIALIZED</b>, 
+<b>GSM_ERROR_BUFFER_NULL</b>, 
+<b>GSM_ERROR_BUFFER_OVERFLOW</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_AUTH</b>, 
+<b>GSM_ERROR_ESP8266</b>, 
+<b>GSM_ERROR_CONNECTION</b>, 
+<b>GSM_ERROR_SENDING</b>, 
+<br />
+&#160;&#160;<b>GSM_ERROR_UNKNOWN</b>, 
+<b>GSM_ST_DEINITIALIZED</b> = 0x00, 
+<b>GSM_ST_INITIALIZING</b>, 
+<b>GSM_ST_ECHO_OFF</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_REGISTER</b>, 
+<b>GSM_ST_INITIALIZED</b>, 
+<b>GSM_ST_DISCONNECTED</b>, 
+<b>GSM_ST_CONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_DHCP</b>, 
+<b>GSM_ST_WPA</b>, 
+<b>GSM_ST_CONNECT</b>, 
+<b>GSM_ST_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_SLEEPING</b>, 
+<b>GSM_ST_DISCONNECTING</b>, 
+<b>GSM_ST_TCP_CONNECTING</b>, 
+<b>GSM_ST_API_CONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_BDATA</b>, 
+<b>GSM_ST_TCP_CONNECTED</b>, 
+<b>GSM_ST_API_CONNECTED</b>, 
+<b>GSM_ST_API_SENDING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_CHECK_CID</b>, 
+<b>GSM_ST_TCP_TRANSMITTING</b>, 
+<b>GSM_ST_TCP_DISCONNECTING</b>, 
+<b>GSM_ST_API_DISCONNECTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_TCP_RECEIVING</b>, 
+<b>GSM_ST_SMS_CFG_CSMS</b>, 
+<b>GSM_ST_SMS_CFG_TEXT</b>, 
+<b>GSM_ST_SMS_CFG_CNMI</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_SMS_CONFIGURED</b>, 
+<b>GSM_ST_SMS_MSG_WRITE</b>, 
+<b>GSM_ST_GPS_CFG_RST</b>, 
+<b>GSM_ST_GPS_CFG_ClR</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_GPS_CFG_ACP</b>, 
+<b>GSM_ST_GPS_CFG_START</b>, 
+<b>GSM_ST_GPS_CONFIGURED</b>, 
+<b>GSM_ST_GPS_STARTING</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_GPS_STARTED</b>, 
+<b>GSM_ST_GPS_STOPPING</b>, 
+<b>GSM_ST_CALL</b>, 
+<b>GSM_ST_ON_CALL</b>, 
+<br />
+&#160;&#160;<b>GSM_ST_CLOSE_CALL</b>, 
+<b>GSM_ST_ERROR</b>, 
+<b>GSM_ST_UNKNOWN</b> = 0xff, 
+<b>WIFI_NO_ERROR</b> = 0x00, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_TIMEOUT</b>, 
+<b>WIFI_ERROR_INVALID_ARG</b>, 
+<b>WIFI_ERROR_UNEXPECTED_RESPONSE</b>, 
+<b>WIFI_ERROR_UNEXPECTED_STATE</b>, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_NOT_INITIALIZED</b>, 
+<b>WIFI_ERROR_BUFFER_NULL</b>, 
+<b>WIFI_ERROR_BUFFER_OVERFLOW</b>, 
+<b>WIFI_ERROR_AUTH</b>, 
+<br />
+&#160;&#160;<b>WIFI_ERROR_ESP8266</b>, 
+<b>WIFI_ERROR_CONNECTION</b>, 
+<b>WIFI_ERROR_SENDING</b>, 
+<b>WIFI_ERROR_UNKNOWN</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_DEINITIALIZED</b> = 0x00, 
+<b>WIFI_ST_INITIALIZING</b>, 
+<b>WIFI_ST_ECHO_OFF</b>, 
+<b>WIFI_ST_SET_MODE</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_INITIALIZED</b>, 
+<b>WIFI_ST_DISCONNECTED</b>, 
+<b>WIFI_ST_CONNECTING</b>, 
+<b>WIFI_ST_DHCP</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_WPA</b>, 
+<b>WIFI_ST_CONNECT</b>, 
+<b>WIFI_ST_CONNECTED</b>, 
+<b>WIFI_ST_SLEEPING</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_DISCONNECTING</b>, 
+<b>WIFI_ST_TCP_CONNECTING</b>, 
+<b>WIFI_ST_TCP_BDATA</b>, 
+<b>WIFI_ST_TCP_CONNECTED</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_TCP_CHECK_CID</b>, 
+<b>WIFI_ST_TCP_TRANSMITTING</b>, 
+<b>WIFI_ST_TCP_RECEIVING</b>, 
+<b>WIFI_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>MQTT_ST_CONNECTING</b>, 
+<b>MQTT_ST_CONNECT</b>, 
+<b>MQTT_ST_CONNECTED</b>, 
+<b>MQTT_ST_SUBSCRIBING</b>, 
+<br />
+&#160;&#160;<b>MQTT_ST_PUBLISHING</b>, 
+<b>MQTT_ST_DISCONNECTING</b>, 
+<b>MQTT_ST_DISCONNECTED</b>, 
+<b>MQTT_ST_ERROR</b>, 
+<br />
+&#160;&#160;<b>WIFI_ST_UNKNOWN</b> = 0xff
+<br />
+ }</td></tr>
+<tr class="separator:a8c1dfc1ccf00a08192611433ee7f17b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a3f72e2cd747ac7efff86cb98cc65ad84"><td class="memItemLeft" align="right" valign="top"><a id="a3f72e2cd747ac7efff86cb98cc65ad84"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>aligned</b> (1))) GsmError_et</td></tr>
+<tr class="separator:a3f72e2cd747ac7efff86cb98cc65ad84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a556faa1c750970264265506f59d38bca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a556faa1c750970264265506f59d38bca">GSM_Init</a> (const char *operadora, const char *ip)</td></tr>
+<tr class="memdesc:a556faa1c750970264265506f59d38bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao Init: Inicializa a comunicacao com o modulo gsm a partir do comando basico "at" em seguida envia o comando para desabilitar o "ate0" e por ultimo, envia o comando para AT+CGDCONT= 1,"IP","Access_Point_Name" para configurar a conexao com a operadora.  <a href="#a556faa1c750970264265506f59d38bca">Mais...</a><br /></td></tr>
+<tr class="separator:a556faa1c750970264265506f59d38bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1482a9afec4b45f6c54ebb6b45b63a13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a1482a9afec4b45f6c54ebb6b45b63a13">GSM_Connect</a> (void)</td></tr>
+<tr class="memdesc:a1482a9afec4b45f6c54ebb6b45b63a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao Connect: Realiza a conexao do modulo com a operadora celular atraves do comando "AT#SGACT=1,1".  <a href="#a1482a9afec4b45f6c54ebb6b45b63a13">Mais...</a><br /></td></tr>
+<tr class="separator:a1482a9afec4b45f6c54ebb6b45b63a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d537444ceaf9e62c27d3ca9439cdec5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a5d537444ceaf9e62c27d3ca9439cdec5">GSM_IsConnected</a> (void)</td></tr>
+<tr class="memdesc:a5d537444ceaf9e62c27d3ca9439cdec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao IsConnected: Indica se o modulo esta conectado.  <a href="#a5d537444ceaf9e62c27d3ca9439cdec5">Mais...</a><br /></td></tr>
+<tr class="separator:a5d537444ceaf9e62c27d3ca9439cdec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97aef42caf510bed5b68f30b0b51739d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a97aef42caf510bed5b68f30b0b51739d">GSM_Disconnect</a> (void)</td></tr>
+<tr class="memdesc:a97aef42caf510bed5b68f30b0b51739d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao Disconnect: Desconecta o modulo com a operadora celular atraves do comando "AT#SGACT=1,0".  <a href="#a97aef42caf510bed5b68f30b0b51739d">Mais...</a><br /></td></tr>
+<tr class="separator:a97aef42caf510bed5b68f30b0b51739d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204eb3dccabfe3f73a84ef804d45eec9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a204eb3dccabfe3f73a84ef804d45eec9">GSM_SocketConnect</a> (char *address, int port)</td></tr>
+<tr class="memdesc:a204eb3dccabfe3f73a84ef804d45eec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao SocketConnect: Abre um socket entre um cliente(ex. modulo) e um servidor de destino (ex. pc) atraves do comando AT::SD=1,0,port,"server_address",0,0,1.  <a href="#a204eb3dccabfe3f73a84ef804d45eec9">Mais...</a><br /></td></tr>
+<tr class="separator:a204eb3dccabfe3f73a84ef804d45eec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55a7db56fa949a83b1c932558cd3344"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#aa55a7db56fa949a83b1c932558cd3344">GSM_SocketWrite</a> (char *buffer, uint16_t bufferLen)</td></tr>
+<tr class="memdesc:aa55a7db56fa949a83b1c932558cd3344"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao SocketWrite: Envia um array de char (dados) por socket atraves do comando "AT#SSEND=1".  <a href="#aa55a7db56fa949a83b1c932558cd3344">Mais...</a><br /></td></tr>
+<tr class="separator:aa55a7db56fa949a83b1c932558cd3344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cee37268ea78a15bb4963900a2da0f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a3cee37268ea78a15bb4963900a2da0f0">GSM_GetIP</a> (char *address)</td></tr>
+<tr class="memdesc:a3cee37268ea78a15bb4963900a2da0f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao GetIP: Obtem o endereco IP, caso o ja esteja conectado.  <a href="#a3cee37268ea78a15bb4963900a2da0f0">Mais...</a><br /></td></tr>
+<tr class="separator:a3cee37268ea78a15bb4963900a2da0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57181e588022ac76825def639e0623bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a57181e588022ac76825def639e0623bf">GSM_SocketRead</a> (char *buffer, uint16_t maxBufferLen, uint16_t timeout)</td></tr>
+<tr class="memdesc:a57181e588022ac76825def639e0623bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao SocketRead: Realiza a leitura de dados recebedos atraves da conexao por socket a partir do comando "AT#SRECV=1,&lt;tamanho_do_dado&gt;".  <a href="#a57181e588022ac76825def639e0623bf">Mais...</a><br /></td></tr>
+<tr class="separator:a57181e588022ac76825def639e0623bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8739e1ef86c309ea21c367586f994683"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a8739e1ef86c309ea21c367586f994683">GSM_SocketDisconnect</a> (void)</td></tr>
+<tr class="memdesc:a8739e1ef86c309ea21c367586f994683"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao SocketDisconnect: Disconecta uma conexao aberta por socket atraves do comando "AT#SH=1".  <a href="#a8739e1ef86c309ea21c367586f994683">Mais...</a><br /></td></tr>
+<tr class="separator:a8739e1ef86c309ea21c367586f994683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad603d858f006e0f3ca0a4806e4e722a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#ad603d858f006e0f3ca0a4806e4e722a5">GSM_Reset</a> (int pin)</td></tr>
+<tr class="memdesc:ad603d858f006e0f3ca0a4806e4e722a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao Reset: Realiza o reset do modulo por hadware.  <a href="#ad603d858f006e0f3ca0a4806e4e722a5">Mais...</a><br /></td></tr>
+<tr class="separator:ad603d858f006e0f3ca0a4806e4e722a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08b79eb6b1b22ca3c31ae6bc2521d42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#ae08b79eb6b1b22ca3c31ae6bc2521d42">GSM_Reboot</a> (void)</td></tr>
+<tr class="memdesc:ae08b79eb6b1b22ca3c31ae6bc2521d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao Reboot: Reinicializa o modulo.  <a href="#ae08b79eb6b1b22ca3c31ae6bc2521d42">Mais...</a><br /></td></tr>
+<tr class="separator:ae08b79eb6b1b22ca3c31ae6bc2521d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb0eb2da17b7e70de767d5538ca4f50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a1eb0eb2da17b7e70de767d5538ca4f50">GSM_CloudConnect</a> (char *apiServer, char *appToken)</td></tr>
+<tr class="memdesc:a1eb0eb2da17b7e70de767d5538ca4f50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao CloudConnect: Realiza uma conexao M2M atraves do comando de configuracao AT::DWCFG=&lt;api server&gt;=""&gt;,0,&lt;token da="" aplicacao&gt;=""&gt; e do comando de conexao AT::DWCONN=1.  <a href="#a1eb0eb2da17b7e70de767d5538ca4f50">Mais...</a><br /></td></tr>
+<tr class="separator:a1eb0eb2da17b7e70de767d5538ca4f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78eb68dc0b1ec65dd2ebd00aa781d294"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a78eb68dc0b1ec65dd2ebd00aa781d294">GSM_Send2Cloud</a> (char *variable, char *value, uint16_t timeout)</td></tr>
+<tr class="memdesc:a78eb68dc0b1ec65dd2ebd00aa781d294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao Send2Cloud: Realiza a publicacao de uma propriedade de uma variavel e seu valor.  <a href="#a78eb68dc0b1ec65dd2ebd00aa781d294">Mais...</a><br /></td></tr>
+<tr class="separator:a78eb68dc0b1ec65dd2ebd00aa781d294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c893f36aed1e70a53d68206ec01c9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a23c893f36aed1e70a53d68206ec01c9f">GSM_CloudDisconnect</a> (void)</td></tr>
+<tr class="memdesc:a23c893f36aed1e70a53d68206ec01c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao CloudDisconnect: Disconecta do servidor de aplicacao.  <a href="#a23c893f36aed1e70a53d68206ec01c9f">Mais...</a><br /></td></tr>
+<tr class="separator:a23c893f36aed1e70a53d68206ec01c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4497d75c36fa01b53fdddc391e8c169"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#aa4497d75c36fa01b53fdddc391e8c169">GSM_ConfigureSMS</a> (void)</td></tr>
+<tr class="memdesc:aa4497d75c36fa01b53fdddc391e8c169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao ConfigureSMS:Configura o modulo para envia de menssagens de texto.  <a href="#aa4497d75c36fa01b53fdddc391e8c169">Mais...</a><br /></td></tr>
+<tr class="separator:aa4497d75c36fa01b53fdddc391e8c169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054f86116458934645ff00202bfe872f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a054f86116458934645ff00202bfe872f">GSM_MessageWrite</a> (const char *number, char *buffer)</td></tr>
+<tr class="memdesc:a054f86116458934645ff00202bfe872f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao MessageWrite: Configura o modulo para envia de menssagens de texto.  <a href="#a054f86116458934645ff00202bfe872f">Mais...</a><br /></td></tr>
+<tr class="separator:a054f86116458934645ff00202bfe872f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92807dfbb72aa7d2e59809641c81d228"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a92807dfbb72aa7d2e59809641c81d228">GSM_MessageRead</a> (char *receive, char *buffer, uint16_t timeout)</td></tr>
+<tr class="memdesc:a92807dfbb72aa7d2e59809641c81d228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao MessageRead: Le menssagens de texto recebidas pelo modulo.  <a href="#a92807dfbb72aa7d2e59809641c81d228">Mais...</a><br /></td></tr>
+<tr class="separator:a92807dfbb72aa7d2e59809641c81d228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a5f29ad3c4c099c8ba4aa419f84961"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a43a5f29ad3c4c099c8ba4aa419f84961">GSM_ConfigureGPS</a> (void)</td></tr>
+<tr class="memdesc:a43a5f29ad3c4c099c8ba4aa419f84961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao ConfigureGPS: Inicializa o modulo GPS com a configuracao padrao.  <a href="#a43a5f29ad3c4c099c8ba4aa419f84961">Mais...</a><br /></td></tr>
+<tr class="separator:a43a5f29ad3c4c099c8ba4aa419f84961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af40e4bf4760d117c1c4d257574b30e45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#af40e4bf4760d117c1c4d257574b30e45">GSM_StartGPS</a> (void)</td></tr>
+<tr class="memdesc:af40e4bf4760d117c1c4d257574b30e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao StartGPS: Ativar mensagens nao solicitadas de dados de GPS no formato NMEA.  <a href="#af40e4bf4760d117c1c4d257574b30e45">Mais...</a><br /></td></tr>
+<tr class="separator:af40e4bf4760d117c1c4d257574b30e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e91b44368d4d48af93a07267814cb08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a4e91b44368d4d48af93a07267814cb08">GSM_GetFixGPS</a> (const char *receive, char *time, double *latitude, double *longitude, char *satelites, char *altitude)</td></tr>
+<tr class="memdesc:a4e91b44368d4d48af93a07267814cb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao GetFixGPS: Captura os dados GPS no formato NMEA.  <a href="#a4e91b44368d4d48af93a07267814cb08">Mais...</a><br /></td></tr>
+<tr class="separator:a4e91b44368d4d48af93a07267814cb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9926057b95542eb0c349619089ce4bc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a9926057b95542eb0c349619089ce4bc7">GSM_StopGPS</a> (void)</td></tr>
+<tr class="memdesc:a9926057b95542eb0c349619089ce4bc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao StopGPS: Desativar mensagens nao solicitadas de dados de GPS no formato NMEA.  <a href="#a9926057b95542eb0c349619089ce4bc7">Mais...</a><br /></td></tr>
+<tr class="separator:a9926057b95542eb0c349619089ce4bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bb2fd6afb407f54f29d8aca4c294820"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a5bb2fd6afb407f54f29d8aca4c294820">GSM_ConfigureGSM</a> (void)</td></tr>
+<tr class="memdesc:a5bb2fd6afb407f54f29d8aca4c294820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao ConfigureGSM: Inicializa comunicacao com modulo GSM.  <a href="#a5bb2fd6afb407f54f29d8aca4c294820">Mais...</a><br /></td></tr>
+<tr class="separator:a5bb2fd6afb407f54f29d8aca4c294820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d6e74fad10142f93f48f8dac15bbc80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#a7d6e74fad10142f93f48f8dac15bbc80">GSM_DoACall</a> (char *number)</td></tr>
+<tr class="memdesc:a7d6e74fad10142f93f48f8dac15bbc80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao DoACall: Realiza uma chamada telefonica para o numero passado como parametro.  <a href="#a7d6e74fad10142f93f48f8dac15bbc80">Mais...</a><br /></td></tr>
+<tr class="separator:a7d6e74fad10142f93f48f8dac15bbc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae2fb0028722415e1e423c904f1217e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#aae2fb0028722415e1e423c904f1217e2">GSM_CloseCall</a> (void)</td></tr>
+<tr class="memdesc:aae2fb0028722415e1e423c904f1217e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao CloseCall: Finaliza uma chamada telefonica.  <a href="#aae2fb0028722415e1e423c904f1217e2">Mais...</a><br /></td></tr>
+<tr class="separator:aae2fb0028722415e1e423c904f1217e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae858cda24a4d0736411d436a5990b157"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#ae858cda24a4d0736411d436a5990b157">GSM_GetFixLBS</a> (double *latitude, double *longitude)</td></tr>
+<tr class="memdesc:ae858cda24a4d0736411d436a5990b157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao GetFixLBS: Obtem a localizacao por LBS (triangulacao por rede de celular).  <a href="#ae858cda24a4d0736411d436a5990b157">Mais...</a><br /></td></tr>
+<tr class="separator:ae858cda24a4d0736411d436a5990b157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e208a419541c823c5cf4063c8b5260"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gsm_x_e910_8h.html#ad2e208a419541c823c5cf4063c8b5260">GSM_Fix2Cloud</a> (char *coordenada, char *valor, uint16_t timeout)</td></tr>
+<tr class="memdesc:ad2e208a419541c823c5cf4063c8b5260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcao Fix2Cloud: Realiza a publicacao, por MQTT, de uma coordenada e seu valor.  <a href="#ad2e208a419541c823c5cf4063c8b5260">Mais...</a><br /></td></tr>
+<tr class="separator:ad2e208a419541c823c5cf4063c8b5260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bb39ba8bf92768658309339e48c9803"><td class="memItemLeft" align="right" valign="top"><a id="a4bb39ba8bf92768658309339e48c9803"></a>
+GsmState_et&#160;</td><td class="memItemRight" valign="bottom"><b>GSM_getState</b> (void)</td></tr>
+<tr class="separator:a4bb39ba8bf92768658309339e48c9803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eccbd35b3c23f57f6146632ad5e4b2d"><td class="memItemLeft" align="right" valign="top"><a id="a9eccbd35b3c23f57f6146632ad5e4b2d"></a>
+GsmState_et&#160;</td><td class="memItemRight" valign="bottom"><b>GSM_getDevState</b> (void)</td></tr>
+<tr class="separator:a9eccbd35b3c23f57f6146632ad5e4b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affd0fa060c25160b5e5cb56104c7587e"><td class="memItemLeft" align="right" valign="top"><a id="affd0fa060c25160b5e5cb56104c7587e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GSM_TcpReadCallback</b> (uint8_t data)</td></tr>
+<tr class="separator:affd0fa060c25160b5e5cb56104c7587e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>A biblioteca XE910 implementa funcionalidades para os modulos Telit da familia x910. </p>
+<p>Esta biblioteca e utilizada por todos os exemplos dos modulos UE910G/HE910.</p>
+<dl class="section author"><dt>Autor</dt><dd>Jonas de Luna Ieno, Lucas S. Feitosa, Pedro Granville e Thales.</dd></dl>
+<dl class="section version"><dt>Versão</dt><dd>1.00 </dd></dl>
+
+<p class="definition">Definição no arquivo <a class="el" href="gsm_x_e910_8h_source.html">gsmXE910.h</a>.</p>
+</div><h2 class="groupheader">Funções</h2>
+<a id="aae2fb0028722415e1e423c904f1217e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae2fb0028722415e1e423c904f1217e2">&#9670;&nbsp;</a></span>GSM_CloseCall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_CloseCall </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao CloseCall: Finaliza uma chamada telefonica. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="a1eb0eb2da17b7e70de767d5538ca4f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eb0eb2da17b7e70de767d5538ca4f50">&#9670;&nbsp;</a></span>GSM_CloudConnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_CloudConnect </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>apiServer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>appToken</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao CloudConnect: Realiza uma conexao M2M atraves do comando de configuracao AT::DWCFG=&lt;api server&gt;=""&gt;,0,&lt;token da="" aplicacao&gt;=""&gt; e do comando de conexao AT::DWCONN=1. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">apiServer</td><td>Recebe o endereco da aplicacao. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token</td><td>Recebe o token da aplicacao.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="a23c893f36aed1e70a53d68206ec01c9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23c893f36aed1e70a53d68206ec01c9f">&#9670;&nbsp;</a></span>GSM_CloudDisconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_CloudDisconnect </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao CloudDisconnect: Disconecta do servidor de aplicacao. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="a43a5f29ad3c4c099c8ba4aa419f84961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43a5f29ad3c4c099c8ba4aa419f84961">&#9670;&nbsp;</a></span>GSM_ConfigureGPS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_ConfigureGPS </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao ConfigureGPS: Inicializa o modulo GPS com a configuracao padrao. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="a5bb2fd6afb407f54f29d8aca4c294820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bb2fd6afb407f54f29d8aca4c294820">&#9670;&nbsp;</a></span>GSM_ConfigureGSM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_ConfigureGSM </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao ConfigureGSM: Inicializa comunicacao com modulo GSM. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="aa4497d75c36fa01b53fdddc391e8c169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4497d75c36fa01b53fdddc391e8c169">&#9670;&nbsp;</a></span>GSM_ConfigureSMS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_ConfigureSMS </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao ConfigureSMS:Configura o modulo para envia de menssagens de texto. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="a1482a9afec4b45f6c54ebb6b45b63a13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1482a9afec4b45f6c54ebb6b45b63a13">&#9670;&nbsp;</a></span>GSM_Connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_Connect </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao Connect: Realiza a conexao do modulo com a operadora celular atraves do comando "AT#SGACT=1,1". </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">resp</td><td>Preenche um array de char com o endereco ip fornecido pela operadora. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">respLen</td><td>Determina o tamanho maximo que a resposta pode ter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="a97aef42caf510bed5b68f30b0b51739d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97aef42caf510bed5b68f30b0b51739d">&#9670;&nbsp;</a></span>GSM_Disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_Disconnect </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao Disconnect: Desconecta o modulo com a operadora celular atraves do comando "AT#SGACT=1,0". </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="a7d6e74fad10142f93f48f8dac15bbc80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d6e74fad10142f93f48f8dac15bbc80">&#9670;&nbsp;</a></span>GSM_DoACall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_DoACall </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>number</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao DoACall: Realiza uma chamada telefonica para o numero passado como parametro. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">number</td><td>Recebe um numera para chamada telefonica no formato +xx()xxxx-xxxxx.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="ad2e208a419541c823c5cf4063c8b5260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e208a419541c823c5cf4063c8b5260">&#9670;&nbsp;</a></span>GSM_Fix2Cloud()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_Fix2Cloud </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>coordenada</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>valor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao Fix2Cloud: Realiza a publicacao, por MQTT, de uma coordenada e seu valor. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">coordenada</td><td>Recebe o nome da coordenada. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">valor</td><td>Recebe o valor da coordenada. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>Recebe o tempo espera para o comando de resposta enviado pelo modulo.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="a4e91b44368d4d48af93a07267814cb08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e91b44368d4d48af93a07267814cb08">&#9670;&nbsp;</a></span>GSM_GetFixGPS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_GetFixGPS </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>receive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>latitude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>longitude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>satelites</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>altitude</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao GetFixGPS: Captura os dados GPS no formato NMEA. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>de entrada com os dados recebidos pela serial. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">time</td><td>Preenche um array de char com a hora recebida pelo modulo GPS. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">latitude</td><td>Atualiza a variavel latitude com a latitude. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">longitude</td><td>Atualiza a variavel longitude com a longitude. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">satelites</td><td>Preenche um array de char com a quantidade de satelites que o modulo GPS encontrou. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">altitude</td><td>Preenche um array de char com a altitude recebida pelo modulo GPS.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="ae858cda24a4d0736411d436a5990b157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae858cda24a4d0736411d436a5990b157">&#9670;&nbsp;</a></span>GSM_GetFixLBS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_GetFixLBS </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>latitude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>longitude</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao GetFixLBS: Obtem a localizacao por LBS (triangulacao por rede de celular). </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">latitude</td><td>Atualiza a variavel latitude com a latitude. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">longitude</td><td>Atualiza a variavel longitude com a longitude.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="a3cee37268ea78a15bb4963900a2da0f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cee37268ea78a15bb4963900a2da0f0">&#9670;&nbsp;</a></span>GSM_GetIP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_GetIP </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>address</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao GetIP: Obtem o endereco IP, caso o ja esteja conectado. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">address</td><td>Preenche um array de char com o endereco ip fornecido pela operadora. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok"(tem IP) do modulo e 0 se receber "error"(nao tem IP). </dd></dl>
+
+</div>
+</div>
+<a id="a556faa1c750970264265506f59d38bca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a556faa1c750970264265506f59d38bca">&#9670;&nbsp;</a></span>GSM_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_Init </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>operadora</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao Init: Inicializa a comunicacao com o modulo gsm a partir do comando basico "at" em seguida envia o comando para desabilitar o "ate0" e por ultimo, envia o comando para AT+CGDCONT= 1,"IP","Access_Point_Name" para configurar a conexao com a operadora. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">operadora</td><td>Recebe o APN da operadora telefonica. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ip</td><td>Recebe o tipo de conexao. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="a5d537444ceaf9e62c27d3ca9439cdec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d537444ceaf9e62c27d3ca9439cdec5">&#9670;&nbsp;</a></span>GSM_IsConnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_IsConnected </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao IsConnected: Indica se o modulo esta conectado. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se estiver conectado e 0 caso contrario". </dd></dl>
+
+</div>
+</div>
+<a id="a92807dfbb72aa7d2e59809641c81d228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92807dfbb72aa7d2e59809641c81d228">&#9670;&nbsp;</a></span>GSM_MessageRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_MessageRead </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>receive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao MessageRead: Le menssagens de texto recebidas pelo modulo. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">receive</td><td>Preenche um array de char com a mensagem recebida pelo modulo. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>de entrada com os dados recebidos pela serial. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>Recebe o tempo espera para o comando de resposta enviado pelo modulo.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="a054f86116458934645ff00202bfe872f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a054f86116458934645ff00202bfe872f">&#9670;&nbsp;</a></span>GSM_MessageWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_MessageWrite </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao MessageWrite: Configura o modulo para envia de menssagens de texto. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">number</td><td>Recebe o numero do celular. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>Recebe um array de char contendo uma menssagem.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="ae08b79eb6b1b22ca3c31ae6bc2521d42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae08b79eb6b1b22ca3c31ae6bc2521d42">&#9670;&nbsp;</a></span>GSM_Reboot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_Reboot </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao Reboot: Reinicializa o modulo. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="ad603d858f006e0f3ca0a4806e4e722a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad603d858f006e0f3ca0a4806e4e722a5">&#9670;&nbsp;</a></span>GSM_Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GSM_Reset </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao Reset: Realiza o reset do modulo por hadware. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>Recebe o numero do pino conectado ao pino de reset do modulo gsm. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a78eb68dc0b1ec65dd2ebd00aa781d294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78eb68dc0b1ec65dd2ebd00aa781d294">&#9670;&nbsp;</a></span>GSM_Send2Cloud()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_Send2Cloud </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>variable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao Send2Cloud: Realiza a publicacao de uma propriedade de uma variavel e seu valor. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">variable</td><td>Recebe o nome da variavel. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Recebe o valor da variavel. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>Recebe o tempo espera para o comando de resposta enviado pelo modulo.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="a204eb3dccabfe3f73a84ef804d45eec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204eb3dccabfe3f73a84ef804d45eec9">&#9670;&nbsp;</a></span>GSM_SocketConnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_SocketConnect </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao SocketConnect: Abre um socket entre um cliente(ex. modulo) e um servidor de destino (ex. pc) atraves do comando AT::SD=1,0,port,"server_address",0,0,1. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Recebe o endereco ip para conexao de destino. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>Recebe a porta para conexao de destino. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="a8739e1ef86c309ea21c367586f994683"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8739e1ef86c309ea21c367586f994683">&#9670;&nbsp;</a></span>GSM_SocketDisconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_SocketDisconnect </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao SocketDisconnect: Disconecta uma conexao aberta por socket atraves do comando "AT#SH=1". </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="a57181e588022ac76825def639e0623bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57181e588022ac76825def639e0623bf">&#9670;&nbsp;</a></span>GSM_SocketRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GSM_SocketRead </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>maxBufferLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao SocketRead: Realiza a leitura de dados recebedos atraves da conexao por socket a partir do comando "AT#SRECV=1,&lt;tamanho_do_dado&gt;". </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>Preeche um buffer com os dados recebidos por socket. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxBufferLen</td><td>Determina a quantidade maxima de bytes que deve ser lido. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>Recebe o tempo espera para o comando de resposta enviado pelo modulo. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna a quantidade de dados recebidos. </dd></dl>
+
+</div>
+</div>
+<a id="aa55a7db56fa949a83b1c932558cd3344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa55a7db56fa949a83b1c932558cd3344">&#9670;&nbsp;</a></span>GSM_SocketWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_SocketWrite </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>bufferLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao SocketWrite: Envia um array de char (dados) por socket atraves do comando "AT#SSEND=1". </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>recebe um array de dados para envio por socket. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="af40e4bf4760d117c1c4d257574b30e45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af40e4bf4760d117c1c4d257574b30e45">&#9670;&nbsp;</a></span>GSM_StartGPS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_StartGPS </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao StartGPS: Ativar mensagens nao solicitadas de dados de GPS no formato NMEA. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+<a id="a9926057b95542eb0c349619089ce4bc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9926057b95542eb0c349619089ce4bc7">&#9670;&nbsp;</a></span>GSM_StopGPS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GSM_StopGPS </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcao StopGPS: Desativar mensagens nao solicitadas de dados de GPS no formato NMEA. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 se receber resposta "ok" do modulo e 0 se receber "error". </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

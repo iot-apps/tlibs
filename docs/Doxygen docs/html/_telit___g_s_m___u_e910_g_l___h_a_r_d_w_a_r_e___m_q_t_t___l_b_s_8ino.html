@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Libs: Referência do Arquivo telit-libs/arduino/Telit_GSM/examples/Telit_GSM_UE910GL_HARDWARE_MQTT_LBS/Telit_GSM_UE910GL_HARDWARE_MQTT_LBS.ino</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-sm.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Libs
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.14 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Busca');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ee39d01ca2cba74545994a549664c8be.html">telit-libs</a></li><li class="navelem"><a class="el" href="dir_a6369b273c35737cbf5f11d73e7ec03d.html">arduino</a></li><li class="navelem"><a class="el" href="dir_99e00a2768c6e3ccb746dbfcda026159.html">Telit_GSM</a></li><li class="navelem"><a class="el" href="dir_5f78f85f96777fe2262b113c3cd247a7.html">examples</a></li><li class="navelem"><a class="el" href="dir_79868b5de2b92bae244fd5ddeaac7de8.html">Telit_GSM_UE910GL_HARDWARE_MQTT_LBS</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definições e Macros</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo Telit_GSM_UE910GL_HARDWARE_MQTT_LBS.ino</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Exemplo sistema MQTT com LBS.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="_x_e910_8h_source.html">XE910.h</a>&gt;</code><br />
+<code>#include &lt;Arduino.h&gt;</code><br />
+<code>#include &quot;wiring_private.h&quot;</code><br />
+</div>
+<p><a href="_telit___g_s_m___u_e910_g_l___h_a_r_d_w_a_r_e___m_q_t_t___l_b_s_8ino_source.html">Vá para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:aaa07390e6158db5d82d40510d2ae02d5"><td class="memItemLeft" align="right" valign="top"><a id="aaa07390e6158db5d82d40510d2ae02d5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SERIAL_BUFFER_SIZE</b>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:aaa07390e6158db5d82d40510d2ae02d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1875309241ce0aabef4e8ce286c182b"><td class="memItemLeft" align="right" valign="top"><a id="ac1875309241ce0aabef4e8ce286c182b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RESP_MAX_LEN</b>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:ac1875309241ce0aabef4e8ce286c182b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08bca59db4b190eaaea4d47b7562869c"><td class="memItemLeft" align="right" valign="top"><a id="a08bca59db4b190eaaea4d47b7562869c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RESET_PIN</b>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:a08bca59db4b190eaaea4d47b7562869c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c082d84abf123584c16903b9065e5a2"><td class="memItemLeft" align="right" valign="top"><a id="a1c082d84abf123584c16903b9065e5a2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPRS_OI</b>&#160;&#160;&#160;&quot;gprs.oi.com.br&quot;</td></tr>
+<tr class="separator:a1c082d84abf123584c16903b9065e5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf58cc422bacbecc0ad9a5340dbadc9c"><td class="memItemLeft" align="right" valign="top"><a id="aaf58cc422bacbecc0ad9a5340dbadc9c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPRS_PROTOCOL</b>&#160;&#160;&#160;&quot;IP&quot;</td></tr>
+<tr class="separator:aaf58cc422bacbecc0ad9a5340dbadc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa55400112be04000b9b5b278269a369"><td class="memItemLeft" align="right" valign="top"><a id="aaa55400112be04000b9b5b278269a369"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ENDPOINT</b>&#160;&#160;&#160;&quot;api-dev.devicewise.com:1883&quot;</td></tr>
+<tr class="separator:aaa55400112be04000b9b5b278269a369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1722601cfab5f4a884833b83c12a4f17"><td class="memItemLeft" align="right" valign="top"><a id="a1722601cfab5f4a884833b83c12a4f17"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>APP_TOKEN</b>&#160;&#160;&#160;&quot;pLh5olDkMVIIG8Pd&quot;</td></tr>
+<tr class="separator:a1722601cfab5f4a884833b83c12a4f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a905b7143ddff268bcf3b94c6b3f605"><td class="memItemLeft" align="right" valign="top"><a id="a8a905b7143ddff268bcf3b94c6b3f605"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NUM_MAX_KEY_VALUE</b>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:a8a905b7143ddff268bcf3b94c6b3f605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86626d4d161f4c3958ce1cd99c5b974e"><td class="memItemLeft" align="right" valign="top"><a id="a86626d4d161f4c3958ce1cd99c5b974e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VARIABLE</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a86626d4d161f4c3958ce1cd99c5b974e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0b03826c8f7cc324ac2db0ada2dce0a"><td class="memItemLeft" align="right" valign="top"><a id="aa0b03826c8f7cc324ac2db0ada2dce0a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VALUE</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aa0b03826c8f7cc324ac2db0ada2dce0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:af6dd210c0dd3900541c82fe24728bb84"><td class="memItemLeft" align="right" valign="top"><a id="af6dd210c0dd3900541c82fe24728bb84"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SERCOM1_Handler</b> ()</td></tr>
+<tr class="separator:af6dd210c0dd3900541c82fe24728bb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top"><a id="a4fc01d736fe50cf5b977f755b675f11d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setup</b> ()</td></tr>
+<tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top"><a id="afe461d27b9c48d5921c00d521181f12f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>loop</b> ()</td></tr>
+<tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:af49e9eb5a574d226f5c0868e552f6481"><td class="memItemLeft" align="right" valign="top"><a id="af49e9eb5a574d226f5c0868e552f6481"></a>
+Uart serialModule &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>sercom1</b></td></tr>
+<tr class="separator:af49e9eb5a574d226f5c0868e552f6481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fcf85aa8abac12a2d0a830bfbfce7a7"><td class="memItemLeft" align="right" valign="top"><a id="a2fcf85aa8abac12a2d0a830bfbfce7a7"></a>
+<a class="el" href="class_x_e910.html">XE910</a> gsm &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>serialModule</b></td></tr>
+<tr class="separator:a2fcf85aa8abac12a2d0a830bfbfce7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Exemplo sistema MQTT com LBS. </p>
+<p>HE910/UE910/UL865/UE866 telit modem <br />
+EVK2 <br />
+Arduino M0</p>
+<p>Este exemplo mostra como enviar por MQTT (nativo) a localição obtida com tecnlogia LBS, para o portal</p>
+<dl class="section version"><dt>Versão</dt><dd>1.00 </dd></dl>
+
+<p class="definition">Definição no arquivo <a class="el" href="_telit___g_s_m___u_e910_g_l___h_a_r_d_w_a_r_e___m_q_t_t___l_b_s_8ino_source.html">Telit_GSM_UE910GL_HARDWARE_MQTT_LBS.ino</a>.</p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

@@ -1,0 +1,9 @@
+/*! \mainpage Documentação das bibliotecas e exemplos do Telit Libs
+ *
+ * Aqui disponibilizamos as bibliotecas, códigos fontes, exemplos de aplicações e toda a documentação
+ * necessária para integração do módulo Telit GSM HE910,
+ * com a família de microcontroladores da Microchip ATSAMD21.
+ * 
+ * As bibliotecas são disponibilizadas para as plataformas Arduino e ASF+FreeRTOS e todas as aplicações
+ * de exemplos são compatíveis com a placa Arduino M0 Pro.
+ */

@@ -1,0 +1,69 @@
+DEMANDA
+
+O sistema-base deverá contar com código fonte responsável pela utilização de comandos AT. Ou seja: uma biblioteca ³client² para esses comandos. Deve gerenciar o envio dos comandos e a coleta das respostas, além do gerenciamento de mensagens unsolicited, que são enviadas fora de um envio de comando.
+
+ Para a aplicação em C, deveremos seguir o padrão já estabelecido pela Atmel, fazendo o máximo para que os novos exemplos não sejam muito diferentes em estilo e abordagem. Ou seja: os exemplos da ATMEL utilizam o sistema Atmel Start ou ASF (são dois sistemas diferentes, sendo que o ASF é mais maduro) para gerar todo o core de drivers e FreeRTOS, e devemos seguir a mesma linha. Na prática, isso facilita o trabalho pois não precisaremos inovar nessas etapas e sim seguir o padrão do fabricante.
+
+ Em cima desse RTOS, pequenas tasks que gerenciem o modem e exemplifiquem o seu uso.
+
+ Para o sistema Arduino, também deveremos ter uma biblioteca que facilite o ato de utilizar comandos AT, e os exemplos de uso deverão ser claros e objetivos.
+
+ Podemos seguir com a seguinte lista de exemplos:
+
+OK  Sistema logger baseado em modem: Tasks contínuas (RTOS) / Loop infinito (no Arduino) que repassa o tráfego de uma das portas seriais para um socket aberto com um servidor remoto, através dos comandos AT para sockets. Com a possibilidade de bufferizar os bytes que foram recebidos enquanto a conexão não estava ativa. As configurações de servidor, baudrate e afins devem ser manuais, através de constantes no código. O sistema deverá verificar que a conexão caiu (contexto com a APN ou o socket caíram) e tentar continuamente uma reconexão. Permitir também o fluxo de dados servidor->dispositivo, refletido na porta serial também. Basicamente um ³tunel de porta serial por rede celular e TCP².
+OK  O mesmo sistema logger acima, baseado em WiFi, através dos comandos AT para sockets.
+XX  O mesmo sistema logger acima, baseado em Bluetooth / comandos AT Terminal IO do módulo.
+
+XX  Sistema logger de Bluetooth através de modem: coloca o módulo Bluetooth para ouvir beacons e broadcasts / advertisement próximos e repassa eles diretamente para um socket aberto no modem.
+XX  Sistema logger de Bluetooth, baseado em Wifi.
+
+OK  Sistema geofence para GPS: Determinar o pertencimento de uma latitude / longitude recebida através dos códigos NMEA emitidos automaticamente pelo módulo GPS, pela porta serial, com o interior polígono definido através de um array de coordenadas. Quando o fix, representado pela mensagem $GPGGA, estiver fora do polígono, enviar onda quadrada para um buzzer / falante e acender um LED.
+    Sistema de geofence por LBS (#MONI). Utilização dos comandos AT#MONI e AT#AGPSSND para obtenção de posição por triangulação por rede celular, com análise de polígono considerando a grande imprecisão da posição obtida. Os comandos são simples de utilizar: AT#MONI=7 (Aguarda), AT#MONI, AT#AGPSSND (receberá lat/long). Devido à imprecisão, o status de ³dentro e fora do polígono² pode ser gradual, ao invés de binário / tudo ou nada.
+
+OK  Publicação de variável em sistema MQTT, comandos AT de MQTT (método fácil) para modem: Criar task ou rotina (arduino) que lê uma fila de dados a serem enviados para o portal MQTT da Telit, em pares ³nome da da variável² e ³valor²,  e para cada item executa os comandos AT de post de variáveis por MQTT embutido nos módulos.
+
+    Publicação de variável em sistema MQTT, comandos AT de Socket (método direto) para modem: Criar task ou rotina (arduino) que lê uma fila de dados a serem enviados para o portal MQTT da Telit, em pares ³nome da da variável² e ³valor²,  e para cada item efetua chamadas a uma biblioteca para o protocolo MQTT, se conectando ao servidor através dos comandos AT de socket do módulo.
+    Publicação de variável em sistema MQTT, comandos AT de MQTT para o módulo WiFi.
+    Publicação de variável em sistema MQTT, comandos AT de Socket para o módulo WiFi.
+OK  Comunicação por SMS: task ou rotina que lê continuamente as mensagens SMS recebidas pelo módulo, lendo seu conteúdo e executando comandos conforme o texto enviado pela mensagem, com resposta por SMS.
+    Sistema de atendimento de ligações com recebimento de comandos por DTMF e resposta/menu através de sons pré-gravados. Os comandos de detecção de DTMF possuem utilização simples e para tocar os sons basta chamar AT#APLAY=1,²diretorio²,²nome_do_arquivo². Ou AT#SAMR. Implementar menus de exemplo e em alguns deles o modem deverá enviar mensagens de SMS conforme o código apertado, enviar variáveis para o servidor MQTT conforme o código apertado.
+OK  Sistema porteiro eletrônico: se um botão for pressionado, liga para um telefone predefinido.
+
+ O servidor dos exemplos para socket pode ser o software ³Packet Sender², configurado para que seu ³TCP SERVER MODE² esteja ativo.
+
+ Exemplos combinados (combinam código dos exemplos anteriores):
+
+    Associação do sistema de geofence com publicação de posições lidas a partir do GPS/LBS em um servidor MQTT.
+    Associação entre o sistema de geofence com envio de posições lidas a partir do GPS/LBS através do sistema de comunicação por SMS.
+XX  Outras combinações possíveis.
+
+ Todos os exemplos deverão ser documentados de forma completa e didática, permitindo a compreensão plena do que foi implantado e a fácil replicação dos testes descritos. É necessário que os materiais instrumentem o usuário a replicar com facilidade tudo que foi descrito, permitindo um curto tempo entre conectar o hardware ao Arduino/Atmel Studio, o Arduino/Atmel Studio ao PC e abrir os sketches/projetos e já coloca-los para funcionar.
+
+ A documentação poderá ser implantada em formato Wiki, tal como neste exemplo: http://wiki.seeed.cc/Arch_BLE/ , com menu de conteúdo do lado esquerdo, facilmente acessível, e tutorial do lado direito, com texto, imagem e arquivos para download.
+
+ PROPOSTA
+
+ Módulos:
+- BlueMod+S24 para Bluetooth
+- GS2101M para Wi-Fi.
+- HE910 para celular
+
+Bibliotecas em C:
+    - Seguir padrão das implementações do Framework ASF;
+    - Implementar Tasks FreeRTOS;
+        - Drivers de comunicação com o dispositivo (UART, SPI, etc. - Provavelmente iremos utilizar os drivers disponíveis no ASF e/ou FreeRTOS)
+        - Biblioteca de core de comandos AT;
+            - Core para envio e recebimento de comandos AT;
+                - Podemos ter os modos de implementação blocante e assíncrono, por callbacks;
+            - Gerenciamento de mensagens unsolicited
+        - Biblioteca de alto nível para cada tipo de dispositivo (BT, GSM, Wifi), implementando funções como: init, config, open, close, status, connect, disconnect, write, read, e outras.
+    - Dúvida: os drivers para Atmel studio sempre usarão o ASF+FreeRTOS ou teremos as duas abordagens em paralelo (com e sem o FreeRTOS)?
+    - Proposta de implementação das bibliotecas:
+        - at.h -> implementação do core de comandos at blocante e não-blocante (callbacks), onde poderemos configurar qualquer interface de comunicação (uart/spi, outras), para implementar o read/write desta.
+        - bt_BlueMod_plus_S24.h -> driver que implementa as funções específicas para o dispositivo bluetooth telit
+        - bt.h -> abstração de interface de comunicação bluetooth, que utilizará o driver do dispositivo telit
+        - wifi_GS2101M.h -> driver que implementa as funções específicas para o dispositivo Wifi Telit
+        - wifi.h -> abstração de interface de comunicação wifi, que utilizará o driver do dispositivo telit
+        - gsm_HE910.h -> driver que implementa as funções específicas para o dispositivo celular da Telit
+        - gsm.h -> abstração de interface de comunicação gsm, que utilizará o driver do dispositivo telit
+

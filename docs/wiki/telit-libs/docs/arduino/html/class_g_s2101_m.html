@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Libs: Referência da Classe GS2101M</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-sm.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Libs
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros Públicos</a> &#124;
+<a href="class_g_s2101_m-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência da Classe GS2101M</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros Públicos</h2></td></tr>
+<tr class="memitem:ab48eeed8f28aaf8431d94e59576ee0a8"><td class="memItemLeft" align="right" valign="top"><a id="ab48eeed8f28aaf8431d94e59576ee0a8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GS2101M</b> (Uart *uartModule)</td></tr>
+<tr class="separator:ab48eeed8f28aaf8431d94e59576ee0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ffc730d8873193324ae536a6bd5b0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_s2101_m.html#ad9ffc730d8873193324ae536a6bd5b0b">Init</a> (void)</td></tr>
+<tr class="memdesc:ad9ffc730d8873193324ae536a6bd5b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função Init: Inicializa a comunicação com o módulo wifi a partir do comando basico "at" em seguida envia o comando para desabilitar o "ate0" e por último, envia o comando para "at+wm = 0" para funcionar como station mode.  <a href="#ad9ffc730d8873193324ae536a6bd5b0b">Mais...</a><br /></td></tr>
+<tr class="separator:ad9ffc730d8873193324ae536a6bd5b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a47093ea0326e19afdb733691b1b831"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_s2101_m.html#a4a47093ea0326e19afdb733691b1b831">Connect</a> (char *resp, int respLen, const char *ssid, const char *password)</td></tr>
+<tr class="memdesc:a4a47093ea0326e19afdb733691b1b831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função Connect: Realiza a conexão do módulo com um AP(access point). Antes da conexão são enviados alguns comandos de configuração: "at+ndhcp=1,ssid,1" para habilitar o dhcp, "at+ wwpa=password" informa ao módula qual é o password da rede de conexão e por fim se conecta com o módulo através do comando "at+wa=ssid".  <a href="#a4a47093ea0326e19afdb733691b1b831">Mais...</a><br /></td></tr>
+<tr class="separator:a4a47093ea0326e19afdb733691b1b831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041ce4f0e9adcda05e7a5582009b9a44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_s2101_m.html#a041ce4f0e9adcda05e7a5582009b9a44">Disconnect</a> (void)</td></tr>
+<tr class="memdesc:a041ce4f0e9adcda05e7a5582009b9a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função Disconnect: Fecha a conecão do módulo wifi com o AP(acess point) a partir do comando "at+wd".  <a href="#a041ce4f0e9adcda05e7a5582009b9a44">Mais...</a><br /></td></tr>
+<tr class="separator:a041ce4f0e9adcda05e7a5582009b9a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a167e75db3948cc4fe32b06eef935b5b2"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_s2101_m.html#a167e75db3948cc4fe32b06eef935b5b2">TcpConnect</a> (char *address, int port)</td></tr>
+<tr class="memdesc:a167e75db3948cc4fe32b06eef935b5b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função TcpConnect: Abre um socket tcp entre um cliente(ex. módulo) e um servidor de destino (ex. pc) através do comando "at+nctcp=address, port".  <a href="#a167e75db3948cc4fe32b06eef935b5b2">Mais...</a><br /></td></tr>
+<tr class="separator:a167e75db3948cc4fe32b06eef935b5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1016ea69f6e791369ae62a356dba9a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_s2101_m.html#aa1016ea69f6e791369ae62a356dba9a5">BData</a> (bool in)</td></tr>
+<tr class="memdesc:aa1016ea69f6e791369ae62a356dba9a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função BData: Habilita o envio/recepção de dados no formato bulk mode através do comando "at+bdata=in".  <a href="#aa1016ea69f6e791369ae62a356dba9a5">Mais...</a><br /></td></tr>
+<tr class="separator:aa1016ea69f6e791369ae62a356dba9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63c87a1fa9cae89b9e79fcdbc108a8a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_s2101_m.html#a63c87a1fa9cae89b9e79fcdbc108a8a9">TcpWrite</a> (byte cid, char *buffer)</td></tr>
+<tr class="memdesc:a63c87a1fa9cae89b9e79fcdbc108a8a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função TcpWrite: Envia um array de char (dados) no formato bulk mode.  <a href="#a63c87a1fa9cae89b9e79fcdbc108a8a9">Mais...</a><br /></td></tr>
+<tr class="separator:a63c87a1fa9cae89b9e79fcdbc108a8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1dbb9bd773c2cd7c8b0e6450a771c09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_s2101_m.html#af1dbb9bd773c2cd7c8b0e6450a771c09">TcpRead</a> (byte cid, char *buffer, uint16_t maxBufferLen, uint16_t timeout)</td></tr>
+<tr class="memdesc:af1dbb9bd773c2cd7c8b0e6450a771c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função TcpRead: Realiza a leitura de dados recebedos através da conexão tcp.  <a href="#af1dbb9bd773c2cd7c8b0e6450a771c09">Mais...</a><br /></td></tr>
+<tr class="separator:af1dbb9bd773c2cd7c8b0e6450a771c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac02ef63188e1d3b47bdfa73c9918dd0d"><td class="memItemLeft" align="right" valign="top"><a id="ac02ef63188e1d3b47bdfa73c9918dd0d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TcpDisconnect</b> (void)</td></tr>
+<tr class="separator:ac02ef63188e1d3b47bdfa73c9918dd0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace65e69d8ef813f4e822d58c56ffcbf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_s2101_m.html#ace65e69d8ef813f4e822d58c56ffcbf9">Reset</a> (int pin)</td></tr>
+<tr class="memdesc:ace65e69d8ef813f4e822d58c56ffcbf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função Reset: Realiza o reset do módulo por hadware.  <a href="#ace65e69d8ef813f4e822d58c56ffcbf9">Mais...</a><br /></td></tr>
+<tr class="separator:ace65e69d8ef813f4e822d58c56ffcbf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock">
+<p class="definition">Definição na linha <a class="el" href="_g_s2101_m_8h_source.html#l00019">19</a> do arquivo <a class="el" href="_g_s2101_m_8h_source.html">GS2101M.h</a>.</p>
+</div><h2 class="groupheader">Funções membros</h2>
+<a id="aa1016ea69f6e791369ae62a356dba9a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1016ea69f6e791369ae62a356dba9a5">&#9670;&nbsp;</a></span>BData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GS2101M::BData </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função BData: Habilita o envio/recepção de dados no formato bulk mode através do comando "at+bdata=in". </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>recebe 0 para desabilitar e 1 para habilitar.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>retorna 1 se receber resposta "ok" do módulo e 0 se receber "error" </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="_g_s2101_m_8cpp_source.html#l00179">179</a> do arquivo <a class="el" href="_g_s2101_m_8cpp_source.html">GS2101M.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4a47093ea0326e19afdb733691b1b831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a47093ea0326e19afdb733691b1b831">&#9670;&nbsp;</a></span>Connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GS2101M::Connect </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>resp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>respLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ssid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função Connect: Realiza a conexão do módulo com um AP(access point). Antes da conexão são enviados alguns comandos de configuração: "at+ndhcp=1,ssid,1" para habilitar o dhcp, "at+ wwpa=password" informa ao módula qual é o password da rede de conexão e por fim se conecta com o módulo através do comando "at+wa=ssid". </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">resp</td><td>Preenche um array de char com os dados com os dados da conexão: ip, subnet e gateway. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">respLen</td><td>Determina o tamanho máximo que a resposta pode ter. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ssid</td><td>ID: da rede que se deseja conectar. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">password</td><td>Senha da rede que se deseja conectar.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>retorna 1 se receber resposta "ok" do módulo e 0 se receber "error" </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="_g_s2101_m_8cpp_source.html#l00074">74</a> do arquivo <a class="el" href="_g_s2101_m_8cpp_source.html">GS2101M.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a041ce4f0e9adcda05e7a5582009b9a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a041ce4f0e9adcda05e7a5582009b9a44">&#9670;&nbsp;</a></span>Disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GS2101M::Disconnect </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função Disconnect: Fecha a conecão do módulo wifi com o AP(acess point) a partir do comando "at+wd". </p>
+<dl class="section return"><dt>Retorna</dt><dd>retorna 1 se receber resposta "ok" do módulo e 0 se receber "error" </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="_g_s2101_m_8cpp_source.html#l00124">124</a> do arquivo <a class="el" href="_g_s2101_m_8cpp_source.html">GS2101M.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad9ffc730d8873193324ae536a6bd5b0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9ffc730d8873193324ae536a6bd5b0b">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GS2101M::Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função Init: Inicializa a comunicação com o módulo wifi a partir do comando basico "at" em seguida envia o comando para desabilitar o "ate0" e por último, envia o comando para "at+wm = 0" para funcionar como station mode. </p>
+<dl class="section return"><dt>Retorna</dt><dd>retorna 1 se receber resposta "ok" do módulo e 0 se receber "error" </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="_g_s2101_m_8cpp_source.html#l00035">35</a> do arquivo <a class="el" href="_g_s2101_m_8cpp_source.html">GS2101M.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ace65e69d8ef813f4e822d58c56ffcbf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace65e69d8ef813f4e822d58c56ffcbf9">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GS2101M::Reset </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função Reset: Realiza o reset do módulo por hadware. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>recebe o número do pino conectado ao pino de reset do módulo wifi. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="_g_s2101_m_8cpp_source.html#l00279">279</a> do arquivo <a class="el" href="_g_s2101_m_8cpp_source.html">GS2101M.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a167e75db3948cc4fe32b06eef935b5b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a167e75db3948cc4fe32b06eef935b5b2">&#9670;&nbsp;</a></span>TcpConnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte GS2101M::TcpConnect </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função TcpConnect: Abre um socket tcp entre um cliente(ex. módulo) e um servidor de destino (ex. pc) através do comando "at+nctcp=address, port". </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addres</td><td>recebe o endereço ip para conexão de destino. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>recebe a porta para conexão de destino.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>retorna o id da conexão que foi aberta. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="_g_s2101_m_8cpp_source.html#l00138">138</a> do arquivo <a class="el" href="_g_s2101_m_8cpp_source.html">GS2101M.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af1dbb9bd773c2cd7c8b0e6450a771c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1dbb9bd773c2cd7c8b0e6450a771c09">&#9670;&nbsp;</a></span>TcpRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GS2101M::TcpRead </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>cid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>maxBufferLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função TcpRead: Realiza a leitura de dados recebedos através da conexão tcp. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cid</td><td>recebe o id da conexão que foi aberta. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>preeche buffer com os dados lidos via tcp. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxBufferLen</td><td>determina a quantidade máxima de bytes que deve ser lido.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>retorna a quantidade de dados recebidos. </dd></dl>
+
+<p class="definition">Definição na linha <a class="el" href="_g_s2101_m_8cpp_source.html#l00223">223</a> do arquivo <a class="el" href="_g_s2101_m_8cpp_source.html">GS2101M.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a63c87a1fa9cae89b9e79fcdbc108a8a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63c87a1fa9cae89b9e79fcdbc108a8a9">&#9670;&nbsp;</a></span>TcpWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GS2101M::TcpWrite </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>cid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função TcpWrite: Envia um array de char (dados) no formato bulk mode. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cid</td><td>recebe o id da conexão que foi aberta . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>recebo dados para envio. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definição na linha <a class="el" href="_g_s2101_m_8cpp_source.html#l00203">203</a> do arquivo <a class="el" href="_g_s2101_m_8cpp_source.html">GS2101M.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para essa classe foi gerada a partir dos seguintes arquivos:<ul>
+<li>telit-libs/arduino/Telit_libs/<a class="el" href="_g_s2101_m_8h_source.html">GS2101M.h</a></li>
+<li>telit-libs/arduino/Telit_libs/<a class="el" href="_g_s2101_m_8cpp_source.html">GS2101M.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

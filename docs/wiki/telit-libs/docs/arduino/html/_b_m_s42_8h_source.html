@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Libs: Código-Fonte de telit-libs/arduino/Telit_libs/BMS42.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-sm.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Libs
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ee39d01ca2cba74545994a549664c8be.html">telit-libs</a></li><li class="navelem"><a class="el" href="dir_a6369b273c35737cbf5f11d73e7ec03d.html">arduino</a></li><li class="navelem"><a class="el" href="dir_5028c0490c5d5b28ca48556b87932379.html">Telit_libs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BMS42.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_b_m_s42_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef BMS42_H</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define BMS42_H</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;inttypes.h&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;AT.h&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_b_m_s42.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_b_m_s42.html">BMS42</a> {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_a_t.html">AT</a> at;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">int</span> _pin; </div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_b_m_s42.html#a804fbbefd0b9f68af89f52a5dc82d9f7">BMS42</a>(Uart* uartModule);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_b_m_s42.html#abf14b7a041c792022969c4e57597c245">Reboot</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_b_m_s42.html#a04c712a7b1124877543bbd7b9aa9cbc6">Reset</a>(<span class="keywordtype">int</span> pin);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_b_m_s42.html#aeb4c51a0e0aa0765b37eee0fd412a13c">BtMode</a>(<span class="keywordtype">int</span> mode);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_b_m_s42.html#ae78380db03b9604fef4a3082002a80a3">BtConnect</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_b_m_s42.html#a929bf891d53c05736da8b5b9276616b9">BtWrite</a>(<span class="keywordtype">char</span>* buffer);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span>  <a class="code" href="class_b_m_s42.html#aa45d7c6d760d29173fa4270b4a8f5d10">BtRead</a>(<span class="keywordtype">char</span>* buffer, uint16_t maxBufferLen, uint16_t timeout);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    </div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_b_m_s42_html"><div class="ttname"><a href="class_b_m_s42.html">BMS42</a></div><div class="ttdef"><b>Definition:</b> <a href="_b_m_s42_8h_source.html#l00020">BMS42.h:20</a></div></div>
+<div class="ttc" id="class_b_m_s42_html_a804fbbefd0b9f68af89f52a5dc82d9f7"><div class="ttname"><a href="class_b_m_s42.html#a804fbbefd0b9f68af89f52a5dc82d9f7">BMS42::BMS42</a></div><div class="ttdeci">BMS42(Uart *uartModule)</div><div class="ttdef"><b>Definition:</b> <a href="_b_m_s42_8cpp_source.html#l00026">BMS42.cpp:26</a></div></div>
+<div class="ttc" id="class_b_m_s42_html_aeb4c51a0e0aa0765b37eee0fd412a13c"><div class="ttname"><a href="class_b_m_s42.html#aeb4c51a0e0aa0765b37eee0fd412a13c">BMS42::BtMode</a></div><div class="ttdeci">bool BtMode(int mode)</div><div class="ttdoc">Função BtMode: Define o mode de execução do bluetooh. </div><div class="ttdef"><b>Definition:</b> <a href="_b_m_s42_8cpp_source.html#l00048">BMS42.cpp:48</a></div></div>
+<div class="ttc" id="class_b_m_s42_html_aa45d7c6d760d29173fa4270b4a8f5d10"><div class="ttname"><a href="class_b_m_s42.html#aa45d7c6d760d29173fa4270b4a8f5d10">BMS42::BtRead</a></div><div class="ttdeci">int BtRead(char *buffer, uint16_t maxBufferLen, uint16_t timeout)</div><div class="ttdoc">Função MessageRead: Lê menssagens de texto recebidas pelo módulo. </div><div class="ttdef"><b>Definition:</b> <a href="_b_m_s42_8cpp_source.html#l00082">BMS42.cpp:82</a></div></div>
+<div class="ttc" id="class_b_m_s42_html_a04c712a7b1124877543bbd7b9aa9cbc6"><div class="ttname"><a href="class_b_m_s42.html#a04c712a7b1124877543bbd7b9aa9cbc6">BMS42::Reset</a></div><div class="ttdeci">void Reset(int pin)</div><div class="ttdoc">Função Reset: Realiza o reset do módulo por hadware. </div><div class="ttdef"><b>Definition:</b> <a href="_b_m_s42_8cpp_source.html#l00092">BMS42.cpp:92</a></div></div>
+<div class="ttc" id="class_b_m_s42_html_a929bf891d53c05736da8b5b9276616b9"><div class="ttname"><a href="class_b_m_s42.html#a929bf891d53c05736da8b5b9276616b9">BMS42::BtWrite</a></div><div class="ttdeci">void BtWrite(char *buffer)</div><div class="ttdoc">Função BtWrite: Configura o módulo para envia de menssagens de texto. </div><div class="ttdef"><b>Definition:</b> <a href="_b_m_s42_8cpp_source.html#l00073">BMS42.cpp:73</a></div></div>
+<div class="ttc" id="class_a_t_html"><div class="ttname"><a href="class_a_t.html">AT</a></div><div class="ttdef"><b>Definition:</b> <a href="_a_t_8h_source.html#l00049">AT.h:49</a></div></div>
+<div class="ttc" id="class_b_m_s42_html_ae78380db03b9604fef4a3082002a80a3"><div class="ttname"><a href="class_b_m_s42.html#ae78380db03b9604fef4a3082002a80a3">BMS42::BtConnect</a></div><div class="ttdeci">bool BtConnect(void)</div><div class="ttdoc">Função BtConnect: Indentifica a realização de uma conexão bluetooth. </div><div class="ttdef"><b>Definition:</b> <a href="_b_m_s42_8cpp_source.html#l00061">BMS42.cpp:61</a></div></div>
+<div class="ttc" id="class_b_m_s42_html_abf14b7a041c792022969c4e57597c245"><div class="ttname"><a href="class_b_m_s42.html#abf14b7a041c792022969c4e57597c245">BMS42::Reboot</a></div><div class="ttdeci">bool Reboot(void)</div><div class="ttdoc">Função Reboot: Reinicializa o módulo. </div><div class="ttdef"><b>Definition:</b> <a href="_b_m_s42_8cpp_source.html#l00036">BMS42.cpp:36</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

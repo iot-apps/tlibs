@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Libs: Código-Fonte de telit-libs/arduino/Telit_libs/GS2101M.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-sm.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Libs
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ee39d01ca2cba74545994a549664c8be.html">telit-libs</a></li><li class="navelem"><a class="el" href="dir_a6369b273c35737cbf5f11d73e7ec03d.html">arduino</a></li><li class="navelem"><a class="el" href="dir_5028c0490c5d5b28ca48556b87932379.html">Telit_libs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">GS2101M.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_g_s2101_m_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef GS2101M_H</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define GS2101M_H</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;inttypes.h&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;AT.h&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_g_s2101_m.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_g_s2101_m.html">GS2101M</a> {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_a_t.html">AT</a> at;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> _pin; </div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_g_s2101_m.html">GS2101M</a>(Uart* uartModule);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_g_s2101_m.html#ad9ffc730d8873193324ae536a6bd5b0b">Init</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_g_s2101_m.html#a4a47093ea0326e19afdb733691b1b831">Connect</a>(<span class="keywordtype">char</span>* resp, <span class="keywordtype">int</span> respLen, <span class="keyword">const</span> <span class="keywordtype">char</span>* ssid, <span class="keyword">const</span> <span class="keywordtype">char</span>* password); </div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    </div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_g_s2101_m.html#a041ce4f0e9adcda05e7a5582009b9a44">Disconnect</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    </div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    byte <a class="code" href="class_g_s2101_m.html#a167e75db3948cc4fe32b06eef935b5b2">TcpConnect</a>(<span class="keywordtype">char</span>* address, <span class="keywordtype">int</span> port);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    </div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_g_s2101_m.html#aa1016ea69f6e791369ae62a356dba9a5">BData</a>(<span class="keywordtype">bool</span> in);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    </div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_g_s2101_m.html#a63c87a1fa9cae89b9e79fcdbc108a8a9">TcpWrite</a>(byte cid, <span class="keywordtype">char</span>* buffer);</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    </div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">int</span>  <a class="code" href="class_g_s2101_m.html#af1dbb9bd773c2cd7c8b0e6450a771c09">TcpRead</a>(byte cid, <span class="keywordtype">char</span>* buffer, uint16_t maxBufferLen, uint16_t timeout);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    </div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">bool</span> TcpDisconnect(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    </div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_g_s2101_m.html#ace65e69d8ef813f4e822d58c56ffcbf9">Reset</a>(<span class="keywordtype">int</span> pin);</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_g_s2101_m_html_a4a47093ea0326e19afdb733691b1b831"><div class="ttname"><a href="class_g_s2101_m.html#a4a47093ea0326e19afdb733691b1b831">GS2101M::Connect</a></div><div class="ttdeci">bool Connect(char *resp, int respLen, const char *ssid, const char *password)</div><div class="ttdoc">Função Connect: Realiza a conexão do módulo com um AP(access point). Antes da conexão são enviados al...</div><div class="ttdef"><b>Definition:</b> <a href="_g_s2101_m_8cpp_source.html#l00074">GS2101M.cpp:74</a></div></div>
+<div class="ttc" id="class_g_s2101_m_html_a63c87a1fa9cae89b9e79fcdbc108a8a9"><div class="ttname"><a href="class_g_s2101_m.html#a63c87a1fa9cae89b9e79fcdbc108a8a9">GS2101M::TcpWrite</a></div><div class="ttdeci">void TcpWrite(byte cid, char *buffer)</div><div class="ttdoc">Função TcpWrite: Envia um array de char (dados) no formato bulk mode. </div><div class="ttdef"><b>Definition:</b> <a href="_g_s2101_m_8cpp_source.html#l00203">GS2101M.cpp:203</a></div></div>
+<div class="ttc" id="class_g_s2101_m_html_ad9ffc730d8873193324ae536a6bd5b0b"><div class="ttname"><a href="class_g_s2101_m.html#ad9ffc730d8873193324ae536a6bd5b0b">GS2101M::Init</a></div><div class="ttdeci">bool Init(void)</div><div class="ttdoc">Função Init: Inicializa a comunicação com o módulo wifi a partir do comando basico &quot;at&quot; em seguida en...</div><div class="ttdef"><b>Definition:</b> <a href="_g_s2101_m_8cpp_source.html#l00035">GS2101M.cpp:35</a></div></div>
+<div class="ttc" id="class_g_s2101_m_html_aa1016ea69f6e791369ae62a356dba9a5"><div class="ttname"><a href="class_g_s2101_m.html#aa1016ea69f6e791369ae62a356dba9a5">GS2101M::BData</a></div><div class="ttdeci">bool BData(bool in)</div><div class="ttdoc">Função BData: Habilita o envio/recepção de dados no formato bulk mode através do comando &quot;at+bdata=in...</div><div class="ttdef"><b>Definition:</b> <a href="_g_s2101_m_8cpp_source.html#l00179">GS2101M.cpp:179</a></div></div>
+<div class="ttc" id="class_g_s2101_m_html_ace65e69d8ef813f4e822d58c56ffcbf9"><div class="ttname"><a href="class_g_s2101_m.html#ace65e69d8ef813f4e822d58c56ffcbf9">GS2101M::Reset</a></div><div class="ttdeci">void Reset(int pin)</div><div class="ttdoc">Função Reset: Realiza o reset do módulo por hadware. </div><div class="ttdef"><b>Definition:</b> <a href="_g_s2101_m_8cpp_source.html#l00279">GS2101M.cpp:279</a></div></div>
+<div class="ttc" id="class_g_s2101_m_html_a167e75db3948cc4fe32b06eef935b5b2"><div class="ttname"><a href="class_g_s2101_m.html#a167e75db3948cc4fe32b06eef935b5b2">GS2101M::TcpConnect</a></div><div class="ttdeci">byte TcpConnect(char *address, int port)</div><div class="ttdoc">Função TcpConnect: Abre um socket tcp entre um cliente(ex. módulo) e um servidor de destino (ex...</div><div class="ttdef"><b>Definition:</b> <a href="_g_s2101_m_8cpp_source.html#l00138">GS2101M.cpp:138</a></div></div>
+<div class="ttc" id="class_a_t_html"><div class="ttname"><a href="class_a_t.html">AT</a></div><div class="ttdef"><b>Definition:</b> <a href="_a_t_8h_source.html#l00049">AT.h:49</a></div></div>
+<div class="ttc" id="class_g_s2101_m_html_af1dbb9bd773c2cd7c8b0e6450a771c09"><div class="ttname"><a href="class_g_s2101_m.html#af1dbb9bd773c2cd7c8b0e6450a771c09">GS2101M::TcpRead</a></div><div class="ttdeci">int TcpRead(byte cid, char *buffer, uint16_t maxBufferLen, uint16_t timeout)</div><div class="ttdoc">Função TcpRead: Realiza a leitura de dados recebedos através da conexão tcp. </div><div class="ttdef"><b>Definition:</b> <a href="_g_s2101_m_8cpp_source.html#l00223">GS2101M.cpp:223</a></div></div>
+<div class="ttc" id="class_g_s2101_m_html_a041ce4f0e9adcda05e7a5582009b9a44"><div class="ttname"><a href="class_g_s2101_m.html#a041ce4f0e9adcda05e7a5582009b9a44">GS2101M::Disconnect</a></div><div class="ttdeci">bool Disconnect(void)</div><div class="ttdoc">Função Disconnect: Fecha a conecão do módulo wifi com o AP(acess point) a partir do comando &quot;at+wd&quot;...</div><div class="ttdef"><b>Definition:</b> <a href="_g_s2101_m_8cpp_source.html#l00124">GS2101M.cpp:124</a></div></div>
+<div class="ttc" id="class_g_s2101_m_html"><div class="ttname"><a href="class_g_s2101_m.html">GS2101M</a></div><div class="ttdef"><b>Definition:</b> <a href="_g_s2101_m_8h_source.html#l00019">GS2101M.h:19</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>
