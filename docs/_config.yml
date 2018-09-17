@@ -1,1 +1,64 @@
-theme: jekyll-theme-minimal
+site_name: Telit Libs
+site_description: 'Bibliotecas para Módulos Telit'
+site_author: 'Jonas Ieno'
+copyright: 'Copyright &copy; 2017 - 2018 Telit'
+
+pages:
+    - Inicio: index.md
+    - Documentações:
+      - Módulos:
+        - Modem XE910: xe910_doc.md
+        - Wifi GS2101M: gs2101m_doc.md
+        - BT BlueMod+S42: bluemods42_doc.md
+      - Arquitetura de Hardware:
+        - ARM SAMD21:
+          - Placa Arduino M0 Pro: arduinom0pro.md
+      - Plataformas de Software:
+        - Arduino: arduino.md
+        - ASF/FreeRTOS: asf.md
+      - Bibliotecas: libs.md
+       # - GSM XE910: xe910_lib.md
+       # - Wifi GS2101M: gs2101m_lib.md
+       # - BT BlueMode+S42: bluemods42_lib.md
+    - Exemplos:
+      - Modem XE910: #xe910_examples.md
+        - Logger Modem: modem_he910g_logger.md
+        - Porteiro Eletrônico: modem_he910g_porteiro_eletronico.md
+        - DTMF Commands: modem_ue910gl_dtmf_commands.md
+        - SMS Commands: modem_he910g_sms_commands.md
+        - Geofence GPS: modem_he910g_gps_geofence.md
+        - Geofence LBS: modem_ue910gl_lbs_geofence.md
+        - Geofence GPS SMS: modem_he910g_gps_geofence _sms.md
+        - Geofence LBS SMS: modem_he910g_lbs_geofence_sms.md
+        - MQTT Hardware: modem_ue910gl_hardware_mqtt.md
+        - MQTT Hardware LBS: modem_ue910gl_hardware_mqtt_lbs.md
+      - Wifi GS2101M: #gs2101m_examples.md
+        - Logger Wifi GS2101M: logger_gs2101m_wifi.md
+        - MQTT Native Wifi: wifi_gs2101m_native_mqtt.md
+        - MQTT Software Wifi: wifi_gs2101m_software_mqtt.md
+      - BT BlueMode+S42: #bluemods42_examples.md
+        - Logger BlueMod+S42: logger_bms42.md
+        - Logger  BlueMod+S42 Modem: logger_bms42_modem.md
+        - Logger  BlueMod+S42 Wifi: logger_bms42_wifi.md
+    - Downloads: downloads.md
+    - Sobre: about.md
+
+repo_name: 'Repositório telit-libs'
+repo_url: 'https://bitbucket.org/li-hw/telit-libs'
+
+theme:
+  name: 'material'
+  palette:
+    primary: 'white'
+    accent: 'indigo'
+  language: 'pt'
+  logo: 'images/logo-lg.png'
+
+# Extensions
+markdown_extensions:
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+
+dev_addr: 'localhost:8000'
