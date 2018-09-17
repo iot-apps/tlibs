@@ -1,3 +1,0 @@
-Este portal disponibiliza um pacote de exemplos de uso para o sistema Arduino M0, bem como o uso direto do microcontrolador no sistema Atmel Studio (programando em C), com documentação didática, permitindo aos clientes da Telit ter um bom ponto de partida para seus projetos envolvendo esses produtos.
-
-Este pacote de exemplos de utilização usa os módulos de modem 2G/3G/4G da Telit, junto a módulo GPS e WiFi e Bluetooth, documentados de forma didática, em forma de manual. Entre os exemplos constam atividades de envio de SMS, controle de chamadas, transferência de dados por TCP/IP através dos comandos IP Easy da Telit, operação básica de Bluetooth e WiFi e conexão na plataforma MQTT da Telit.
